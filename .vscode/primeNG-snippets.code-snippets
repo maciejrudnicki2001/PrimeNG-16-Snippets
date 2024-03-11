@@ -1,5 +1,5 @@
 {
-	"animateOnScrollFadeIn": {
+	"AnimateOnScrollFadeIn": {
 		"scope": "html",
 		"prefix": "p-animateOnScrollFadeIn",
 		"body": [
@@ -9,7 +9,7 @@
 		],
 		"description": "Animate on scroll fade in"
 	},
-	"animateOnScrollFadeInLeft": {
+	"AnimateOnScrollFadeInLeft": {
 		"scope": "html",
 		"prefix": "p-animateOnScrollFadeInLeft",
 		"body": [
@@ -19,7 +19,7 @@
 		],
 		"description": "Animate on scroll fade in left"
 	},
-	"animateOnScrollFadeInRight": {
+	"AnimateOnScrollFadeInRight": {
 		"scope": "html",
 		"prefix": "p-animateOnScrollFadeInRight",
 		"body": [
@@ -29,7 +29,7 @@
 		],
 		"description": "Animate on scroll fade in right"
 	},
-	"animateOnScrollZoomIn": {
+	"AnimateOnScrollZoomIn": {
 		"scope": "html",
 		"prefix": "p-animateOnScrollZoomIn",
 		"body": [
@@ -39,7 +39,7 @@
 		],
 		"description": "Animate on scroll zoom in"
 	},
-	"animateOnScrollFlipLeft": {
+	"AnimateOnScrollFlipLeft": {
 		"scope": "html",
 		"prefix": "p-animateOnScrollFlipLeft",
 		"body": [
@@ -49,7 +49,7 @@
 		],
 		"description": "Animate on scroll flip left"
 	},
-	"animateOnScrollFlipUp": {
+	"AnimateOnScrollFlipUp": {
 		"scope": "html",
 		"prefix": "p-animateOnScrollFlipUp",
 		"body": [
@@ -59,7 +59,7 @@
 		],
 		"description": "Animate on scroll flip up"
 	},
-	"animateOnScrollScaleIn": {
+	"AnimateOnScrollScaleIn": {
 		"scope": "html",
 		"prefix": "p-animateOnScrollScaleIn",
 		"body": [
@@ -69,71 +69,158 @@
 		],
 		"description": "Animate on scroll scale in"
 	},
-	"autoFocusModule": {
+	"AutoFocusModule": {
 		"scope": "html",
 		"prefix": "p-autoFocusModule",
 		"body": "<input type='text' pInputText pAutoFocus [autofocus]='true' placeholder='Automatically focused' />",
 		"description": "Auto focus module"
 	},
-	"rippleDefault": {
+	"RippleDefault": {
 		"scope": "html",
 		"prefix": "p-rippleDefault",
 		"body": "<div pRipple class='$1'> Default Ripple </div>",
 		"description": "Ripple default"
 	},
-	"rippleCustom": {
+	"RippleCustom": {
 		"scope": "html",
 		"prefix": "p-rippleCustom",
 		"body": "<div pRipple class='card styled-box-$1 shadow-2> Chosen Color </div>",
 		"description": "Ripple custom"
 	},
-	"basicTerminal": {
+	"BasicTerminal": {
 		"scope": "html",
 		"prefix": "p-basicTerminal",
 		"body": "<p-terminal welcomeMessage='$1' prompt='$2'></p-terminal>",
 		"description": "Basic terminal"
 	},
-	"basicTag": {
+	"BasicTag": {
 		"scope": "html",
 		"prefix": "p-basicTag",
 		"body": "<p-tag value='$1'></p-tag>",
 		"description": "Basic tag"
 	},
-	"severityTag": {
+	"SeverityTag": {
 		"scope": "html",
 		"prefix": "p-severityTag",
 		"body": "<p-tag value='$1' severity='$2'></p-tag>",
 		"description": "Severity tag"
 	},
-	"pillTag": {
+	"PillTag": {
 		"scope": "html",
 		"prefix": "p-pillTag",
 		"body": "<p-tag value='$1' severity='$2' rounded='true'></p-tag>",
 		"description": "Pill tag"
 	},
-	"iconTag": {
+	"IconTag": {
 		"scope": "html",
 		"prefix": "p-iconTag",
 		"body": "<p-tag value='$1' severity='$2' icon='$3'></p-tag>",
 		"description": "Icon tag"
 	},
-	"basicProgressSpinner": {
+	"BasicProgressSpinner": {
 		"scope": "html",
 		"prefix": "p-basicProgressSpinner",
 		"body": "<p-progressSpinner ariaLabel='loading'></p-progressSpinner>",
 		"description": "Basic progress spinner"
 	},
-	"basicProgressBar": {
+	"BasicProgressBar": {
 		"scope": "html",
 		"prefix": "p-basicProgressBar",
-		"body": "<p-progressBar value='$1'></p-progressBar>",
+		"body": "<p-progressBar [value]='$1'></p-progressBar>",
 		"description": "Basic progress bar"
 	},
-	"indeterminateProgressBar": {
+	"IndeterminateProgressBar": {
 		"scope": "html",
 		"prefix": "p-indeterminateProgressBar",
 		"body": "<p-progressBar mode='indeterminate'></p-progressBar>",
 		"description": "Indeterminate progress bar"
+	},
+	"MeterGroupBasic": {
+		"scope": "html",
+		"prefix": "p-meterGroup-basic",
+		"body": ["<p-meterGroup [value]='${1:value}'></p-meterGroup>"],
+		"description": "Basic p-meterGroup"
+	},
+	"InplaceBasic": {
+		"scope": "html",
+		"prefix": "p-inplace-basic",
+		"body": ["<p-inplace>",
+			"  <ng-template p-Template='display'>",
+			"    <span>${1:Edit Me}</span>",
+			"  </ng-template>",
+			"  <ng-template p-Template='content'>",
+			"    <span>",
+			"      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet facilisis magna.",
+			"    </span>",
+			"  </ng-template>",
+			"</p-inplace>"],
+		"description": "Basic p-inplace"
+	},
+	"ChipBasic": {
+		"scope": "html",
+		"prefix": "p-chip-basic",
+		"body": ["<p-chip label='${1:Text}'></p-chip>"],
+		"description": "Basic p-chip"
+	},
+	"ChipIcon": {
+		"scope": "html",
+		"prefix": "p-chip-icon",
+		"body": ["<p-chip label='${1:Text}' icon='${2:pi pi-user}'></p-chip>"],
+		"description": "p-chip with icon"
+	},
+	"BlockUIDocument": {
+		"scope": "html",
+		"prefix": "p-blockUIDocument",
+		"body": ["<p-blockUI [blocked]='${1:blocked}'></p-blockUI>"],
+		"description": "Block UI Document"
+	},
+	"BadgeBasic": {
+		"scope": "html",
+		"prefix": "p-badge-basic",
+		"body": ["<p-badge [value]='${1:Text}'></p-badge>"],
+		"description": "Basic p-badge"
+	},
+	"BadgeDirective": {
+		"scope": "html",
+		"prefix": "p-badge-directive",
+		"body": ["<i class='pi pi-bell text-3xl' pBadge value='${1:2}'></i>"],
+		"description": "p-badge directive"
+	},
+	"BadgeSeverity": {
+		"scope": "html",
+		"prefix": "p-badge-severity",
+		"body": ["<p-badge [value]='${1:2}' severity='${2:success}'></p-badge>"],
+		"description": "p-badge with severity"
+	},
+	"BadgeSize": {
+		"scope": "html",
+		"prefix": "p-badge-size",
+		"body": ["<p-badge [value]='${1:2}' size='${2:large}'></p-badge>"],
+		"description": "p-badge with size"
+	},
+	"BadgeButton": {
+		"scope": "html",
+		"prefix": "p-badge-button",
+		"body": ["<p-button label='${1:Emails} badge='${2:8} styleCLass='${3:mr-2}'></p-button>"],
+		"description": "p-badge on button"
+	},
+	"AvatarIcon": {
+		"scope": "html",
+		"prefix": "p-avatar-icon",
+		"body": ["<p-avatar icon='${1:pi pi-user}'></p-avatar>"],
+		"description": "p-avatar with icon"
+	},
+	"AvatarImage": {
+		"scope": "html",
+		"prefix": "p-avatar-image",
+		"body": ["<p-avatar image='${1:icon-path} shape='${2:circle}''></p-avatar>"],
+		"description": "p-avatar with image"
+	},
+	"IconBadge": {
+		"scope": "html",
+		"prefix": "p-icon-badge",
+		"body": ["<p-avatar image='${1:https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png}' pBadge value='${2:4}' severity='${3:danger}'></p-avatar>"],
+		"description": "p-avatar with badge"
 	},
 	"AutoCompleteBasic": {
 		"scope": "html",
