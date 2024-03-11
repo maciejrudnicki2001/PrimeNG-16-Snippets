@@ -1,3 +1,5 @@
+import { AppComponent } from './app.component';
+
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -29,10 +31,19 @@ import { SliderModule } from 'primeng/slider';
 import { ToggleButtonModule } from 'primeng/togglebutton';
 import { TreeSelectModule } from 'primeng/treeselect';
 import { TriStateCheckboxModule } from 'primeng/tristatecheckbox';
-import { AppComponent } from './app.component';
-import { ProgressBarModule } from 'primeng/progressbar';
-import { ToastModule } from 'primeng/toast';
-
+import { SplitButtonModule } from 'primeng/splitbutton';
+import { SpeedDialModule } from 'primeng/speeddial';
+import { TableModule } from 'primeng/table';
+import { DataViewModule } from 'primeng/dataview';
+import { ScrollerModule } from 'primeng/scroller';
+import { OrderListModule } from 'primeng/orderlist';
+import { OrganizationChartModule } from 'primeng/organizationchart';
+import { PaginatorModule } from 'primeng/paginator';
+import { PickListModule } from 'primeng/picklist';
+import { TreeModule } from 'primeng/tree';
+import { TreeTableModule } from 'primeng/treetable';
+import { TimelineModule } from 'primeng/timeline';
+import { VirtualScrollerModule } from 'primeng/virtualscroller';
 
 @NgModule({
   declarations: [AppComponent],
@@ -66,11 +77,19 @@ import { ToastModule } from 'primeng/toast';
     TriStateCheckboxModule,
     ToggleButtonModule,
     ButtonModule,
-    AnimateOnScrollModule,
-    AutoFocusModule,
-    ProgressBarModule,
-    ToastModule
-
+    SplitButtonModule,
+    SpeedDialModule,
+    TableModule,
+    DataViewModule,
+    ScrollerModule,
+    OrderListModule,
+    OrganizationChartModule,
+    PaginatorModule,
+    PickListModule,
+    TreeModule,
+    TreeTableModule,
+    TimelineModule,
+    VirtualScrollerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
