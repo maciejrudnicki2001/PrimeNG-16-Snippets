@@ -135,507 +135,540 @@
 		"body": "<p-progressBar mode='indeterminate'></p-progressBar>",
 		"description": "Indeterminate progress bar"
 	},
-  "AutoCompleteBasic": {
-    "scope": "html",
-    "prefix": "p-autoComplete-basic",
-    "body": [
-      "<p-autoComplete [(ngModel)]=\"${1:text}\" [suggestions]=\"${2:results}\" (completeMethod)=\"${3:yourSearchFunction}(\\$event)\"></p-autoComplete>"
-    ],
-    "description": "Basic p-autoComplete"
-  },
-  "AutoCompleteReactive": {
-    "scope": "html",
-    "prefix": "p-autoComplete-reactive",
-    "body": [
-      "<p-autoComplete formControlName=\"${1:name}\" [suggestions]=\"${2:results}\" (completeMethod)=\"${3:yourSearchFunction}(\\$event)\" field=\"${4:name}\"></p-autoComplete>"
-    ],
-    "description": "Reactive Forms p-autoComplete"
-  },
-  "CalendarBasic": {
-    "scope": "html",
-    "prefix": "p-calendar-basic",
-    "body": ["<p-calendar [(ngModel)]=\"${1:date}\"></p-calendar>"],
-    "description": "Basic p-calendar"
-  },
-  "CalendarReactive": {
-    "scope": "html",
-    "prefix": "p-calendar-reactive",
-    "body": ["<p-calendar formControlName=\"${1:name}\"></p-calendar>"],
-    "description": "Reactive Forms p-calendar"
-  },
-  "CascadeSelectBasic": {
-    "scope": "html",
-    "prefix": "p-cascadeSelect-basic",
-    "body": [
-      "<p-cascadeSelect [(ngModel)]=\"${1:country}\" [options]=\"${2:countries}\" optionLabel=\"${3:name}\" optionGroupLabel=\"${4:name}\" [optionGroupChildren]=\"${5:states}\" placeholder=\"${6:Select a Country}\"></p-cascadeSelect>"
-    ],
-    "description": "Basic p-cascadeSelect"
-  },
-  "CascadeSelectReactive": {
-    "scope": "html",
-    "prefix": "p-cascadeSelect-reactive",
-    "body": [
-      "<p-cascadeSelect formControlName=\"${1:country}\" [options]=\"${2:countries}\" optionLabel=\"${3:name}\" optionGroupLabel=\"${4:name}\" [optionGroupChildren]=\"${5:states}\" placeholder=\"${6:Select a Country}\"></p-cascadeSelect>"
-    ],
-    "description": "Reactive Forms p-cascadeSelect"
-  },
-  "CheckboxBasic": {
-    "scope": "html",
-    "prefix": "p-checkbox-basic",
-    "body": [
-      "<p-checkbox [(ngModel)]=\"${1:checked}\" [binary]=\"${2:boolean}\" inputId=\"${3:inputId}\"></p-checkbox>"
-    ],
-    "description": "Basic p-checkbox"
-  },
-  "CheckboxReactive": {
-    "scope": "html",
-    "prefix": "p-checkbox-reactive",
-    "body": [
-      "<p-checkbox formControlName=\"${1:name}\" value=\"${2:value}\" inputId=\"${3:inputId}\"></p-checkbox>"
-    ],
-    "description": "Reactive Forms p-checkbox"
-  },
-  "ChipsBasic": {
-    "scope": "html",
-    "prefix": "p-chips-basic",
-    "body": ["<p-chips [(ngModel)]=\"${1:value}\"></p-chips>"],
-    "description": "Basic p-chips"
-  },
-  "ChipsReactive": {
-    "scope": "html",
-    "prefix": "p-chips-reactive",
-    "body": ["<p-chips formControlName=\"${1:name}\"></p-chips>"],
-    "description": "Reactive Forms p-chips"
-  },
-  "ColorPickerBasic": {
-    "scope": "html",
-    "prefix": "p-colorPicker-basic",
-    "body": ["<p-colorPicker [(ngModel)]=\"${1:color}\"></p-colorPicker>"],
-    "description": "Basic p-colorPicker"
-  },
-  "ColorPickerReactive": {
-    "scope": "html",
-    "prefix": "p-colorPicker-reactive",
-    "body": ["<p-colorPicker formControlName=\"${1:name}\"></p-colorPicker>"],
-    "description": "Reactive Forms p-colorPicker"
-  },
-  "DropdownBasic": {
-    "scope": "html",
-    "prefix": "p-dropdown-basic",
-    "body": [
-      "<p-dropdown [(ngModel)]=\"${1:city}\" [options]=\"${2:cities}\" optionLabel=\"${3:name}\" [showClear]=\"${4:boolean}\" placeholder=\"${5:name}\"></p-dropdown>"
-    ],
-    "description": "Basic p-dropdown"
-  },
-  "DropdownReactive": {
-    "scope": "html",
-    "prefix": "p-dropdown-reactive",
-    "body": [
-      "<p-dropdown formControlName=\"${1:city}\" [options]=\"${2:cities}\" optionLabel=\"${3:name}\" placeholder=\"${5:name}\"></p-dropdown>"
-    ],
-    "description": "Reactive Forms p-dropdown"
-  },
-  "EditorBasic": {
-    "scope": "html",
-    "prefix": "p-editor-basic",
-    "body": ["<p-editor [(ngModel)]=\"${1:text}\"></p-editor>"],
-    "description": "Basic p-editor"
-  },
-  "EditorReactive": {
-    "scope": "html",
-    "prefix": "p-editor-reactive",
-    "body": ["<p-editor formControlName=\"${1:text}\"></p-editor>"],
-    "description": "Reactive Forms p-editor"
-  },
-  "InputGroupBasic": {
-    "scope": "html",
-    "prefix": "p-inputGroup-basic",
-    "body": [
-      "<div class=\"p-inputgroup\"><span class=\"p-inputgroup-addon\"><i class=\"pi pi-user\"></i></span><input type=\"text\" pInputText placeholder=\"${1:Username}\"></div>"
-    ],
-    "description": "Basic p-inputGroup"
-  },
-  "InputMaskBasic": {
-    "scope": "html",
-    "prefix": "p-inputMask-basic",
-    "body": [
-      "<p-inputMask [(ngModel)]=\"${1:value}\" mask=\"${2:99-99999}\" placeholder=\"${3:99-99999}\"></p-inputMask>"
-    ],
-    "description": "Basic p-inputMask"
-  },
-  "InputMaskReactive": {
-    "scope": "html",
-    "prefix": "p-inputMask-reactive",
-    "body": [
-      "<p-inputMask formControlName=\"${1:name}\" mask=\"${2:99-99999}\" placeholder=\"${3:99-99999}\"></p-inputMask>"
-    ],
-    "description": "Reactive Forms p-inputMask"
-  },
-  "InputSwitchBasic": {
-    "scope": "html",
-    "prefix": "p-inputSwitch-basic",
-    "body": ["<p-inputSwitch [(ngModel)]=\"${1:checked}\"></p-inputSwitch>"],
-    "description": "Basic p-inputSwitch"
-  },
-  "InputSwitchReactive": {
-    "scope": "html",
-    "prefix": "p-inputSwitch-reactive",
-    "body": ["<p-inputSwitch formControlName=\"${1:name}\"></p-inputSwitch>"],
-    "description": "Reactive Forms p-inputSwitch"
-  },
-  "InputTextBasic": {
-    "scope": "html",
-    "prefix": "p-inputText-basic",
-    "body": ["<input type=\"${1:text}\" pInputText [(ngModel)]=\"${2:text}\">"],
-    "description": "Basic p-inputText"
-  },
-  "InputTextReactive": {
-    "scope": "html",
-    "prefix": "p-inputText-reactive",
-    "body": [
-      "<input type=\"${1:text}\" pInputText formControlName=\"${2:text}\">"
-    ],
-    "description": "Reactive Forms p-inputText"
-  },
-  "InputTextareaBasic": {
-    "scope": "html",
-    "prefix": "p-inputTextarea-basic",
-    "body": [
-      "<textarea rows=\"${1:x}\" cols=\"${2:y}\" pInputTextarea [(ngModel)]=\"${3:text}\"></textarea>"
-    ],
-    "description": "Basic p-inputTextarea"
-  },
-  "InputTextareaReactive": {
-    "scope": "html",
-    "prefix": "p-inputTextarea-reactive",
-    "body": [
-      "<textarea rows=\"${1:x}\" cols=\"${2:y}\" pInputTextarea formControlName=\"${3:text}\"></textarea>"
-    ],
-    "description": "Reactive Forms p-inputTextarea"
-  },
-  "InputNumberIntegerOnlyBasic": {
-    "scope": "html",
-    "prefix": "p-inputNumber-integer-only-basic",
-    "body": [
-      "<p-inputNumber inputId=\"${1:integeronly}\" [(ngModel)]=\"${2:value}\"></p-inputNumber>"
-    ],
-    "description": "Basic p-inputNumber with integer only"
-  },
-  "InputNumberIntegerOnlyReactive": {
-    "scope": "html",
-    "prefix": "p-inputNumber-integer-only-reactive",
-    "body": [
-      "<p-inputNumber inputId=\"${1:integeronly}\" formControlName=\"${2:value}\"></p-inputNumber>"
-    ],
-    "description": "Reactive Forms p-inputNumber with integer only"
-  },
-  "InputNumberWithoutGroupingBasic": {
-    "scope": "html",
-    "prefix": "p-inputNumber-without-grouping-basic",
-    "body": [
-      "<p-inputNumber inputId=\"${1:withoutgrouping}\" [(ngModel)]=\"${2:value}\" mode=\"${3:decimal}\" [useGrouping]=\"${4:false}\"></p-inputNumber>"
-    ],
-    "description": "Basic p-inputNumber without grouping"
-  },
-  "InputNumberWithoutGroupingReactive": {
-    "scope": "html",
-    "prefix": "p-inputNumber-without-grouping-reactive",
-    "body": [
-      "<p-inputNumber inputId=\"${1:withoutgrouping}\" formControlName=\"${2:value}\" mode=\"${3:decimal}\" [useGrouping]=\"${4:false}\"></p-inputNumber>"
-    ],
-    "description": "Reactive Forms p-inputNumber without grouping"
-  },
-  "InputNumberMinMaxFractionDigitsBasic": {
-    "scope": "html",
-    "prefix": "p-inputNumber-min-max-fraction-digits-basic",
-    "body": [
-      "<p-inputNumber inputId=\"${1:minmaxfraction}\" [(ngModel)]=\"${2:value}\" [minFractionDigits]=\"${3:number}\" [maxFractionDigits]=\"${4:number}\"></p-inputNumber>"
-    ],
-    "description": "Basic p-inputNumber with min and max fraction digits"
-  },
-  "InputNumberMinMaxFractionDigitsReactive": {
-    "scope": "html",
-    "prefix": "p-inputNumber-min-max-fraction-digits-reactive",
-    "body": [
-      "<p-inputNumber inputId=\"${1:minmaxfraction}\" formControlName=\"${2:value}\" [minFractionDigits]=\"${3:number}\" [maxFractionDigits]=\"${4:number}\"></p-inputNumber>"
-    ],
-    "description": "Reactive Forms p-inputNumber with min and max fraction digits"
-  },
-  "InputNumberMinMaxBoundariesBasic": {
-    "scope": "html",
-    "prefix": "p-inputNumber-min-max-boundaries-basic",
-    "body": [
-      "<p-inputNumber inputId=\"${1:minmax}\" [(ngModel)]=\"${2:value}\" [min]=\"${3:number}\" [max]=\"${4:number}\" mode=\"${5:decimal}\"></p-inputNumber>"
-    ],
-    "description": "Basic p-inputNumber with min and max boundaries"
-  },
-  "InputNumberMinMaxBoundariesReactive": {
-    "scope": "html",
-    "prefix": "p-inputNumber-min-max-boundaries-reactive",
-    "body": [
-      "<p-inputNumber inputId=\"${1:minmax}\" formControlName=\"${2:value}\" [min]=\"${3:number}\" [max]=\"${4:number}\" mode=\"${5:decimal}\"></p-inputNumber>"
-    ],
-    "description": "Reactive Forms p-inputNumber with min and max boundaries"
-  },
-  "KnobBasic": {
-    "scope": "html",
-    "prefix": "p-knob-basic",
-    "body": ["<p-knob [(ngModel)]=\"${1:value}\"></p-knob>"],
-    "description": "Basic p-knob"
-  },
-  "KnobReactive": {
-    "scope": "html",
-    "prefix": "p-knob-reactive",
-    "body": ["<p-knob formControlName=\"${1:name}\"></p-knob>"],
-    "description": "Reactive Forms p-knob"
-  },
-  "KeyFilterIntBasic": {
-    "scope": "html",
-    "prefix": "p-keyFilter-integer-basic",
-    "body": [
-      "<input pInputText pKeyFilter=\"${1:int}\" placeholder=\"${2:Enter only integers}\">"
-    ],
-    "description": "Basic p-keyFilter for integer"
-  },
-  "KeyFilterIntReactive": {
-    "scope": "html",
-    "prefix": "p-keyFilter-integer-reactive",
-    "body": [
-      "<input pInputText id=\"${1:integer}\" pKeyFilter=\"${2:int}\" formControlName=\"${3:value}\" placeholder=\"${4:Enter only integers}\" >"
-    ],
-    "description": "Reactive Forms p-keyFilter for integer"
-  },
-  "KeyFilterNumberBasic": {
-    "scope": "html",
-    "prefix": "p-keyFilter-number-basic",
-    "body": [
-      "<input pInputText pKeyFilter=\"${1:num}\" placeholder=\"${2:Enter only numbers}\">"
-    ],
-    "description": "Basic p-keyFilter for number"
-  },
-  "KeyFilterNumberReactive": {
-    "scope": "html",
-    "prefix": "p-keyFilter-number-reactive",
-    "body": [
-      "<input pInputText id=\"${1:number}\" pKeyFilter=\"${2:num}\" formControlName=\"${3:value}\" placeholder=\"${4:Enter only numbers}\">"
-    ],
-    "description": "Reactive Forms p-keyFilter for number"
-  },
-  "KeyFilterMoneyBasic": {
-    "scope": "html",
-    "prefix": "p-keyFilter-money-basic",
-    "body": [
-      "<input pInputText pKeyFilter=\"${1:money}\" placeholder=\"${2:Enter only money}\">"
-    ],
-    "description": "Basic p-keyFilter for money"
-  },
-  "KeyFilterMoneyReactive": {
-    "scope": "html",
-    "prefix": "p-keyFilter-money-reactive",
-    "body": [
-      "<input pInputText id=\"${1:money}\" pKeyFilter=\"${2:money}\" formControlName=\"${3:value}\" placeholder=\"${4:Enter only money}\">"
-    ],
-    "description": "Reactive Forms p-keyFilter for money"
-  },
-  "KeyFilterHexBasic": {
-    "scope": "html",
-    "prefix": "p-keyFilter-hex-basic",
-    "body": [
-      "<input pInputText pKeyFilter=\"${1:hex}\" placeholder=\"${2:Enter only hex}\">"
-    ],
-    "description": "Basic p-keyFilter for hex"
-  },
-  "KeyFilterHexReactive": {
-    "scope": "html",
-    "prefix": "p-keyFilter-hex-reactive",
-    "body": [
-      "<input pInputText id=\"${1:hex}\" pKeyFilter=\"${2:hex}\" formControlName=\"${3:value}\" placeholder=\"${4:Enter only hex}\">"
-    ],
-    "description": "Reactive Forms p-keyFilter for hex"
-  },
-  "KeyFilterAlphabeticBasic": {
-    "scope": "html",
-    "prefix": "p-keyFilter-Alphabetic-basic",
-    "body": [
-      "<input pInputText pKeyFilter=\"${1:alpha}\" placeholder=\"${2:Enter only alphabetic}\">"
-    ],
-    "description": "Basic p-keyFilter for Alphabetic"
-  },
-  "KeyFilterAlphabeticReactive": {
-    "scope": "html",
-    "prefix": "p-keyFilter-Alphabetic-reactive",
-    "body": [
-      "<input pInputText id=\"${1:alpha}\" pKeyFilter=\"${2:alpha}\" formControlName=\"${3:value}\" placeholder=\"${4:Enter only alphabetic}\">"
-    ],
-    "description": "Reactive Forms p-keyFilter for Alphabetic"
-  },
-  "KeyFilterAlphanumericBasic": {
-    "scope": "html",
-    "prefix": "p-keyFilter-Alphanumeric-basic",
-    "body": [
-      "<input pInputText pKeyFilter=\"${1:alphanum}\" placeholder=\"${2:Enter only alphanumeric}\">"
-    ],
-    "description": "Basic p-keyFilter for Alphanumeric"
-  },
-  "KeyFilterAlphanumericReactive": {
-    "scope": "html",
-    "prefix": "p-keyFilter-Alphanumeric-reactive",
-    "body": [
-      "<input pInputText id=\"${1:alphanum}\" pKeyFilter=\"${2:alphanum}\" formControlName=\"${3:value}\" placeholder=\"${4:Enter only alphanumeric}\">"
-    ],
-    "description": "Reactive Forms p-keyFilter for Alphanumeric"
-  },
-  "ListboxBasic": {
-    "scope": "html",
-    "prefix": "p-listbox-basic",
-    "body": [
-      "<p-listbox [(ngModel)]=\"${1:selectedCity}\" [options]=\"${2:cities}\" optionLabel=\"${3:name}\"></p-listbox>"
-    ],
-    "description": "Basic p-listbox"
-  },
-  "ListboxReactive": {
-    "scope": "html",
-    "prefix": "p-listbox-reactive",
-    "body": [
-      "<p-listbox formControlName=\"${1:selectedCity}\" [options]=\"${2:cities}\" optionLabel=\"${3:name}\"></p-listbox>"
-    ],
-    "description": "Reactive Forms p-listbox"
-  },
-  "MultiSelectBasic": {
-    "scope": "html",
-    "prefix": "p-multiSelect-basic",
-    "body": [
-      "<p-multiSelect [(ngModel)]=\"${1:selectedCities}\" [options]=\"${2:cities}\" optionLabel=\"${3:name}\"></p-multiSelect>"
-    ],
-    "description": "Basic p-multiSelect"
-  },
-  "MultiSelectReactive": {
-    "scope": "html",
-    "prefix": "p-multiSelect-reactive",
-    "body": [
-      "<p-multiSelect formControlName=\"${1:selectedCities}\" [options]=\"${2:cities}\" optionLabel=\"${3:name}\"></p-multiSelect>"
-    ],
-    "description": "Reactive Forms p-multiSelect"
-  },
-  "PasswordBasic": {
-    "scope": "html",
-    "prefix": "p-password-basic",
-    "body": [
-      "<p-password [(ngModel)]=\"${1:value}\" [feedback]=\"${2:false}\"></p-password>"
-    ],
-    "description": "Basic p-password"
-  },
-  "PasswordReactive": {
-    "scope": "html",
-    "prefix": "p-password-reactive",
-    "body": [
-      "<p-password formControlName=\"${1:value}\" [feedback]=\"${2:false}\"></p-password>"
-    ],
-    "description": "Reactive Forms p-password"
-  },
-  "RadioButtonBasic": {
-    "scope": "html",
-    "prefix": "p-radioButton-basic",
-    "body": [
-      "<p-radioButton name=\"${1:name}\" value=\"${2:value}\" [(ngModel)]=\"${3:selectedValue}\" inputId=\"${4:inputId}\"></p-radioButton>"
-    ],
-    "description": "Basic p-radioButton"
-  },
-  "RadioButtonReactive": {
-    "scope": "html",
-    "prefix": "p-radioButton-reactive",
-    "body": [
-      "<p-radioButton formControlName=\"${1:name}\" value=\"${2:value}\" inputId=\"${3:inputId}\"></p-radioButton>"
-    ],
-    "description": "Reactive Forms p-radioButton"
-  },
-  "RatingBasic": {
-    "scope": "html",
-    "prefix": "p-rating-basic",
-    "body": ["<p-rating [(ngModel)]=\"${1:value}\"></p-rating>"],
-    "description": "Basic p-rating"
-  },
-  "RatingReactive": {
-    "scope": "html",
-    "prefix": "p-rating-reactive",
-    "body": ["<p-rating formControlName=\"${1:name}\"></p-rating>"],
-    "description": "Reactive Forms p-rating"
-  },
-  "SelectButtonBasic": {
-    "scope": "html",
-    "prefix": "p-selectButton-basic",
-    "body": [
-      "<p-selectButton [options]=\"${1:stateOptions}\" [(ngModel)]=\"${2:value}\" optionLabel=\"${3:optionLabel}\" optionValue=\"${4:optionValue}\"></p-selectButton>"
-    ],
-    "description": "Basic p-selectButton"
-  },
-  "SelectButtonReactive": {
-    "scope": "html",
-    "prefix": "p-selectButton-reactive",
-    "body": [
-      "<p-selectButton [options]=\"${1:stateOptions}\" formControlName=\"${2:value}\" optionLabel=\"${3:optionLabel}\" optionValue=\"${4:optionValue}\"></p-selectButton>"
-    ],
-    "description": "Reactive Forms p-selectButton"
-  },
-  "SliderBasic": {
-    "scope": "html",
-    "prefix": "p-slider-basic",
-    "body": ["<p-slider [(ngModel)]=\"${1:value}\"></p-slider>"],
-    "description": "Basic p-slider"
-  },
-  "SliderReactive": {
-    "scope": "html",
-    "prefix": "p-slider-reactive",
-    "body": ["<p-slider formControlName=\"${1:name}\"></p-slider>"],
-    "description": "Reactive Forms p-slider"
-  },
-  "TreeSelectBasic": {
-    "scope": "html",
-    "prefix": "p-treeSelect-basic",
-    "body": [
-      "<p-treeSelect [(ngModel)]=\"${1:selectedNodes}\" [options]=\"${2:nodes}\" placeholder=\"${3:Select Item}\" ></p-treeSelect>"
-    ],
-    "description": "Basic p-treeSelect"
-  },
-  "TreeSelectReactive": {
-    "scope": "html",
-    "prefix": "p-treeSelect-reactive",
-    "body": [
-      "<p-treeSelect formControlName=\"${1:selectedNodes}\" [options]=\"${2:nodes}\" placeholder=\"${3:Select Item}\" ></p-treeSelect>"
-    ],
-    "description": "Reactive Forms p-treeSelect"
-  },
-  "TriStateCheckboxBasic": {
-    "scope": "html",
-    "prefix": "p-triStateCheckbox-basic",
-    "body": [
-      "<p-triStateCheckbox [(ngModel)]=\"${1:value}\" inputId=\"${2:tricheckbox}\" ></p-triStateCheckbox>"
-    ],
-    "description": "Basic p-triStateCheckbox"
-  },
-  "TriStateCheckboxReactive": {
-    "scope": "html",
-    "prefix": "p-triStateCheckbox-reactive",
-    "body": [
-      "<p-triStateCheckbox formControlName=\"${1:value}\" inputId=\"${2:tricheckbox}\" ></p-triStateCheckbox>"
-    ],
-    "description": "Reactive Forms p-triStateCheckbox"
-  },
-  "ToggleButtonBasic": {
-    "scope": "html",
-    "prefix": "p-toggleButton-basic",
-    "body": [
-      "<p-toggleButton [(ngModel)]=\"${1:value}\" onLabel=\"${2:Yes}\" offLabel=\"${3:No}\"></p-toggleButton>"
-    ],
-    "description": "Basic p-toggleButton"
-  },
-  "ToggleButtonReactive": {
-    "scope": "html",
-    "prefix": "p-toggleButton-reactive",
-    "body": [
-      "<p-toggleButton formControlName=\"${1:value}\" onLabel=\"${2:Yes}\" offLabel=\"${3:No}\"></p-toggleButton>"
-    ],
-    "description": "Reactive Forms p-toggleButton"
-  }
+	"AutoCompleteBasic": {
+		"scope": "html",
+		"prefix": "p-autoComplete-basic",
+		"body": [
+			"<p-autoComplete [(ngModel)]=\"${1:text}\" [suggestions]=\"${2:results}\" (completeMethod)=\"${3:yourSearchFunction}(\\$event)\"></p-autoComplete>"
+		],
+		"description": "Basic p-autoComplete"
+	},
+	"AutoCompleteReactive": {
+		"scope": "html",
+		"prefix": "p-autoComplete-reactive",
+		"body": [
+			"<p-autoComplete formControlName=\"${1:name}\" [suggestions]=\"${2:results}\" (completeMethod)=\"${3:yourSearchFunction}(\\$event)\" field=\"${4:name}\"></p-autoComplete>"
+		],
+		"description": "Reactive Forms p-autoComplete"
+	},
+	"CalendarBasic": {
+		"scope": "html",
+		"prefix": "p-calendar-basic",
+		"body": [
+			"<p-calendar [(ngModel)]=\"${1:date}\"></p-calendar>"
+		],
+		"description": "Basic p-calendar"
+	},
+	"CalendarReactive": {
+		"scope": "html",
+		"prefix": "p-calendar-reactive",
+		"body": [
+			"<p-calendar formControlName=\"${1:name}\"></p-calendar>"
+		],
+		"description": "Reactive Forms p-calendar"
+	},
+	"CascadeSelectBasic": {
+		"scope": "html",
+		"prefix": "p-cascadeSelect-basic",
+		"body": [
+			"<p-cascadeSelect [(ngModel)]=\"${1:country}\" [options]=\"${2:countries}\" optionLabel=\"${3:name}\" optionGroupLabel=\"${4:name}\" [optionGroupChildren]=\"${5:states}\" placeholder=\"${6:Select a Country}\"></p-cascadeSelect>"
+		],
+		"description": "Basic p-cascadeSelect"
+	},
+	"CascadeSelectReactive": {
+		"scope": "html",
+		"prefix": "p-cascadeSelect-reactive",
+		"body": [
+			"<p-cascadeSelect formControlName=\"${1:country}\" [options]=\"${2:countries}\" optionLabel=\"${3:name}\" optionGroupLabel=\"${4:name}\" [optionGroupChildren]=\"${5:states}\" placeholder=\"${6:Select a Country}\"></p-cascadeSelect>"
+		],
+		"description": "Reactive Forms p-cascadeSelect"
+	},
+	"CheckboxBasic": {
+		"scope": "html",
+		"prefix": "p-checkbox-basic",
+		"body": [
+			"<p-checkbox [(ngModel)]=\"${1:checked}\" [binary]=\"${2:boolean}\" inputId=\"${3:inputId}\"></p-checkbox>"
+		],
+		"description": "Basic p-checkbox"
+	},
+	"CheckboxReactive": {
+		"scope": "html",
+		"prefix": "p-checkbox-reactive",
+		"body": [
+			"<p-checkbox formControlName=\"${1:name}\" value=\"${2:value}\" inputId=\"${3:inputId}\"></p-checkbox>"
+		],
+		"description": "Reactive Forms p-checkbox"
+	},
+	"ChipsBasic": {
+		"scope": "html",
+		"prefix": "p-chips-basic",
+		"body": [
+			"<p-chips [(ngModel)]=\"${1:value}\"></p-chips>"
+		],
+		"description": "Basic p-chips"
+	},
+	"ChipsReactive": {
+		"scope": "html",
+		"prefix": "p-chips-reactive",
+		"body": [
+			"<p-chips formControlName=\"${1:name}\"></p-chips>"
+		],
+		"description": "Reactive Forms p-chips"
+	},
+	"ColorPickerBasic": {
+		"scope": "html",
+		"prefix": "p-colorPicker-basic",
+		"body": [
+			"<p-colorPicker [(ngModel)]=\"${1:color}\"></p-colorPicker>"
+		],
+		"description": "Basic p-colorPicker"
+	},
+	"ColorPickerReactive": {
+		"scope": "html",
+		"prefix": "p-colorPicker-reactive",
+		"body": [
+			"<p-colorPicker formControlName=\"${1:name}\"></p-colorPicker>"
+		],
+		"description": "Reactive Forms p-colorPicker"
+	},
+	"DropdownBasic": {
+		"scope": "html",
+		"prefix": "p-dropdown-basic",
+		"body": [
+			"<p-dropdown [(ngModel)]=\"${1:city}\" [options]=\"${2:cities}\" optionLabel=\"${3:name}\" [showClear]=\"${4:boolean}\" placeholder=\"${5:name}\"></p-dropdown>"
+		],
+		"description": "Basic p-dropdown"
+	},
+	"DropdownReactive": {
+		"scope": "html",
+		"prefix": "p-dropdown-reactive",
+		"body": [
+			"<p-dropdown formControlName=\"${1:city}\" [options]=\"${2:cities}\" optionLabel=\"${3:name}\" placeholder=\"${5:name}\"></p-dropdown>"
+		],
+		"description": "Reactive Forms p-dropdown"
+	},
+	"EditorBasic": {
+		"scope": "html",
+		"prefix": "p-editor-basic",
+		"body": [
+			"<p-editor [(ngModel)]=\"${1:text}\"></p-editor>"
+		],
+		"description": "Basic p-editor"
+	},
+	"EditorReactive": {
+		"scope": "html",
+		"prefix": "p-editor-reactive",
+		"body": [
+			"<p-editor formControlName=\"${1:text}\"></p-editor>"
+		],
+		"description": "Reactive Forms p-editor"
+	},
+	"InputGroupBasic": {
+		"scope": "html",
+		"prefix": "p-inputGroup-basic",
+		"body": [
+			"<div class=\"p-inputgroup\"><span class=\"p-inputgroup-addon\"><i class=\"pi pi-user\"></i></span><input type=\"text\" pInputText placeholder=\"${1:Username}\"></div>"
+		],
+		"description": "Basic p-inputGroup"
+	},
+	"InputMaskBasic": {
+		"scope": "html",
+		"prefix": "p-inputMask-basic",
+		"body": [
+			"<p-inputMask [(ngModel)]=\"${1:value}\" mask=\"${2:99-99999}\" placeholder=\"${3:99-99999}\"></p-inputMask>"
+		],
+		"description": "Basic p-inputMask"
+	},
+	"InputMaskReactive": {
+		"scope": "html",
+		"prefix": "p-inputMask-reactive",
+		"body": [
+			"<p-inputMask formControlName=\"${1:name}\" mask=\"${2:99-99999}\" placeholder=\"${3:99-99999}\"></p-inputMask>"
+		],
+		"description": "Reactive Forms p-inputMask"
+	},
+	"InputSwitchBasic": {
+		"scope": "html",
+		"prefix": "p-inputSwitch-basic",
+		"body": [
+			"<p-inputSwitch [(ngModel)]=\"${1:checked}\"></p-inputSwitch>"
+		],
+		"description": "Basic p-inputSwitch"
+	},
+	"InputSwitchReactive": {
+		"scope": "html",
+		"prefix": "p-inputSwitch-reactive",
+		"body": [
+			"<p-inputSwitch formControlName=\"${1:name}\"></p-inputSwitch>"
+		],
+		"description": "Reactive Forms p-inputSwitch"
+	},
+	"InputTextBasic": {
+		"scope": "html",
+		"prefix": "p-inputText-basic",
+		"body": [
+			"<input type=\"${1:text}\" pInputText [(ngModel)]=\"${2:text}\">"
+		],
+		"description": "Basic p-inputText"
+	},
+	"InputTextReactive": {
+		"scope": "html",
+		"prefix": "p-inputText-reactive",
+		"body": [
+			"<input type=\"${1:text}\" pInputText formControlName=\"${2:text}\">"
+		],
+		"description": "Reactive Forms p-inputText"
+	},
+	"InputTextareaBasic": {
+		"scope": "html",
+		"prefix": "p-inputTextarea-basic",
+		"body": [
+			"<textarea rows=\"${1:x}\" cols=\"${2:y}\" pInputTextarea [(ngModel)]=\"${3:text}\"></textarea>"
+		],
+		"description": "Basic p-inputTextarea"
+	},
+	"InputTextareaReactive": {
+		"scope": "html",
+		"prefix": "p-inputTextarea-reactive",
+		"body": [
+			"<textarea rows=\"${1:x}\" cols=\"${2:y}\" pInputTextarea formControlName=\"${3:text}\"></textarea>"
+		],
+		"description": "Reactive Forms p-inputTextarea"
+	},
+	"InputNumberIntegerOnlyBasic": {
+		"scope": "html",
+		"prefix": "p-inputNumber-integer-only-basic",
+		"body": [
+			"<p-inputNumber inputId=\"${1:integeronly}\" [(ngModel)]=\"${2:value}\"></p-inputNumber>"
+		],
+		"description": "Basic p-inputNumber with integer only"
+	},
+	"InputNumberIntegerOnlyReactive": {
+		"scope": "html",
+		"prefix": "p-inputNumber-integer-only-reactive",
+		"body": [
+			"<p-inputNumber inputId=\"${1:integeronly}\" formControlName=\"${2:value}\"></p-inputNumber>"
+		],
+		"description": "Reactive Forms p-inputNumber with integer only"
+	},
+	"InputNumberWithoutGroupingBasic": {
+		"scope": "html",
+		"prefix": "p-inputNumber-without-grouping-basic",
+		"body": [
+			"<p-inputNumber inputId=\"${1:withoutgrouping}\" [(ngModel)]=\"${2:value}\" mode=\"${3:decimal}\" [useGrouping]=\"${4:false}\"></p-inputNumber>"
+		],
+		"description": "Basic p-inputNumber without grouping"
+	},
+	"InputNumberWithoutGroupingReactive": {
+		"scope": "html",
+		"prefix": "p-inputNumber-without-grouping-reactive",
+		"body": [
+			"<p-inputNumber inputId=\"${1:withoutgrouping}\" formControlName=\"${2:value}\" mode=\"${3:decimal}\" [useGrouping]=\"${4:false}\"></p-inputNumber>"
+		],
+		"description": "Reactive Forms p-inputNumber without grouping"
+	},
+	"InputNumberMinMaxFractionDigitsBasic": {
+		"scope": "html",
+		"prefix": "p-inputNumber-min-max-fraction-digits-basic",
+		"body": [
+			"<p-inputNumber inputId=\"${1:minmaxfraction}\" [(ngModel)]=\"${2:value}\" [minFractionDigits]=\"${3:number}\" [maxFractionDigits]=\"${4:number}\"></p-inputNumber>"
+		],
+		"description": "Basic p-inputNumber with min and max fraction digits"
+	},
+	"InputNumberMinMaxFractionDigitsReactive": {
+		"scope": "html",
+		"prefix": "p-inputNumber-min-max-fraction-digits-reactive",
+		"body": [
+			"<p-inputNumber inputId=\"${1:minmaxfraction}\" formControlName=\"${2:value}\" [minFractionDigits]=\"${3:number}\" [maxFractionDigits]=\"${4:number}\"></p-inputNumber>"
+		],
+		"description": "Reactive Forms p-inputNumber with min and max fraction digits"
+	},
+	"InputNumberMinMaxBoundariesBasic": {
+		"scope": "html",
+		"prefix": "p-inputNumber-min-max-boundaries-basic",
+		"body": [
+			"<p-inputNumber inputId=\"${1:minmax}\" [(ngModel)]=\"${2:value}\" [min]=\"${3:number}\" [max]=\"${4:number}\" mode=\"${5:decimal}\"></p-inputNumber>"
+		],
+		"description": "Basic p-inputNumber with min and max boundaries"
+	},
+	"InputNumberMinMaxBoundariesReactive": {
+		"scope": "html",
+		"prefix": "p-inputNumber-min-max-boundaries-reactive",
+		"body": [
+			"<p-inputNumber inputId=\"${1:minmax}\" formControlName=\"${2:value}\" [min]=\"${3:number}\" [max]=\"${4:number}\" mode=\"${5:decimal}\"></p-inputNumber>"
+		],
+		"description": "Reactive Forms p-inputNumber with min and max boundaries"
+	},
+	"KnobBasic": {
+		"scope": "html",
+		"prefix": "p-knob-basic",
+		"body": [
+			"<p-knob [(ngModel)]=\"${1:value}\"></p-knob>"
+		],
+		"description": "Basic p-knob"
+	},
+	"KnobReactive": {
+		"scope": "html",
+		"prefix": "p-knob-reactive",
+		"body": [
+			"<p-knob formControlName=\"${1:name}\"></p-knob>"
+		],
+		"description": "Reactive Forms p-knob"
+	},
+	"KeyFilterIntBasic": {
+		"scope": "html",
+		"prefix": "p-keyFilter-integer-basic",
+		"body": [
+			"<input pInputText pKeyFilter=\"${1:int}\" placeholder=\"${2:Enter only integers}\">"
+		],
+		"description": "Basic p-keyFilter for integer"
+	},
+	"KeyFilterIntReactive": {
+		"scope": "html",
+		"prefix": "p-keyFilter-integer-reactive",
+		"body": [
+			"<input pInputText id=\"${1:integer}\" pKeyFilter=\"${2:int}\" formControlName=\"${3:value}\" placeholder=\"${4:Enter only integers}\" >"
+		],
+		"description": "Reactive Forms p-keyFilter for integer"
+	},
+	"KeyFilterNumberBasic": {
+		"scope": "html",
+		"prefix": "p-keyFilter-number-basic",
+		"body": [
+			"<input pInputText pKeyFilter=\"${1:num}\" placeholder=\"${2:Enter only numbers}\">"
+		],
+		"description": "Basic p-keyFilter for number"
+	},
+	"KeyFilterNumberReactive": {
+		"scope": "html",
+		"prefix": "p-keyFilter-number-reactive",
+		"body": [
+			"<input pInputText id=\"${1:number}\" pKeyFilter=\"${2:num}\" formControlName=\"${3:value}\" placeholder=\"${4:Enter only numbers}\">"
+		],
+		"description": "Reactive Forms p-keyFilter for number"
+	},
+	"KeyFilterMoneyBasic": {
+		"scope": "html",
+		"prefix": "p-keyFilter-money-basic",
+		"body": [
+			"<input pInputText pKeyFilter=\"${1:money}\" placeholder=\"${2:Enter only money}\">"
+		],
+		"description": "Basic p-keyFilter for money"
+	},
+	"KeyFilterMoneyReactive": {
+		"scope": "html",
+		"prefix": "p-keyFilter-money-reactive",
+		"body": [
+			"<input pInputText id=\"${1:money}\" pKeyFilter=\"${2:money}\" formControlName=\"${3:value}\" placeholder=\"${4:Enter only money}\">"
+		],
+		"description": "Reactive Forms p-keyFilter for money"
+	},
+	"KeyFilterHexBasic": {
+		"scope": "html",
+		"prefix": "p-keyFilter-hex-basic",
+		"body": [
+			"<input pInputText pKeyFilter=\"${1:hex}\" placeholder=\"${2:Enter only hex}\">"
+		],
+		"description": "Basic p-keyFilter for hex"
+	},
+	"KeyFilterHexReactive": {
+		"scope": "html",
+		"prefix": "p-keyFilter-hex-reactive",
+		"body": [
+			"<input pInputText id=\"${1:hex}\" pKeyFilter=\"${2:hex}\" formControlName=\"${3:value}\" placeholder=\"${4:Enter only hex}\">"
+		],
+		"description": "Reactive Forms p-keyFilter for hex"
+	},
+	"KeyFilterAlphabeticBasic": {
+		"scope": "html",
+		"prefix": "p-keyFilter-Alphabetic-basic",
+		"body": [
+			"<input pInputText pKeyFilter=\"${1:alpha}\" placeholder=\"${2:Enter only alphabetic}\">"
+		],
+		"description": "Basic p-keyFilter for Alphabetic"
+	},
+	"KeyFilterAlphabeticReactive": {
+		"scope": "html",
+		"prefix": "p-keyFilter-Alphabetic-reactive",
+		"body": [
+			"<input pInputText id=\"${1:alpha}\" pKeyFilter=\"${2:alpha}\" formControlName=\"${3:value}\" placeholder=\"${4:Enter only alphabetic}\">"
+		],
+		"description": "Reactive Forms p-keyFilter for Alphabetic"
+	},
+	"KeyFilterAlphanumericBasic": {
+		"scope": "html",
+		"prefix": "p-keyFilter-Alphanumeric-basic",
+		"body": [
+			"<input pInputText pKeyFilter=\"${1:alphanum}\" placeholder=\"${2:Enter only alphanumeric}\">"
+		],
+		"description": "Basic p-keyFilter for Alphanumeric"
+	},
+	"KeyFilterAlphanumericReactive": {
+		"scope": "html",
+		"prefix": "p-keyFilter-Alphanumeric-reactive",
+		"body": [
+			"<input pInputText id=\"${1:alphanum}\" pKeyFilter=\"${2:alphanum}\" formControlName=\"${3:value}\" placeholder=\"${4:Enter only alphanumeric}\">"
+		],
+		"description": "Reactive Forms p-keyFilter for Alphanumeric"
+	},
+	"ListboxBasic": {
+		"scope": "html",
+		"prefix": "p-listbox-basic",
+		"body": [
+			"<p-listbox [(ngModel)]=\"${1:selectedCity}\" [options]=\"${2:cities}\" optionLabel=\"${3:name}\"></p-listbox>"
+		],
+		"description": "Basic p-listbox"
+	},
+	"ListboxReactive": {
+		"scope": "html",
+		"prefix": "p-listbox-reactive",
+		"body": [
+			"<p-listbox formControlName=\"${1:selectedCity}\" [options]=\"${2:cities}\" optionLabel=\"${3:name}\"></p-listbox>"
+		],
+		"description": "Reactive Forms p-listbox"
+	},
+	"MultiSelectBasic": {
+		"scope": "html",
+		"prefix": "p-multiSelect-basic",
+		"body": [
+			"<p-multiSelect [(ngModel)]=\"${1:selectedCities}\" [options]=\"${2:cities}\" optionLabel=\"${3:name}\"></p-multiSelect>"
+		],
+		"description": "Basic p-multiSelect"
+	},
+	"MultiSelectReactive": {
+		"scope": "html",
+		"prefix": "p-multiSelect-reactive",
+		"body": [
+			"<p-multiSelect formControlName=\"${1:selectedCities}\" [options]=\"${2:cities}\" optionLabel=\"${3:name}\"></p-multiSelect>"
+		],
+		"description": "Reactive Forms p-multiSelect"
+	},
+	"PasswordBasic": {
+		"scope": "html",
+		"prefix": "p-password-basic",
+		"body": [
+			"<p-password [(ngModel)]=\"${1:value}\" [feedback]=\"${2:false}\"></p-password>"
+		],
+		"description": "Basic p-password"
+	},
+	"PasswordReactive": {
+		"scope": "html",
+		"prefix": "p-password-reactive",
+		"body": [
+			"<p-password formControlName=\"${1:value}\" [feedback]=\"${2:false}\"></p-password>"
+		],
+		"description": "Reactive Forms p-password"
+	},
+	"RadioButtonBasic": {
+		"scope": "html",
+		"prefix": "p-radioButton-basic",
+		"body": [
+			"<p-radioButton name=\"${1:name}\" value=\"${2:value}\" [(ngModel)]=\"${3:selectedValue}\" inputId=\"${4:inputId}\"></p-radioButton>"
+		],
+		"description": "Basic p-radioButton"
+	},
+	"RadioButtonReactive": {
+		"scope": "html",
+		"prefix": "p-radioButton-reactive",
+		"body": [
+			"<p-radioButton formControlName=\"${1:name}\" value=\"${2:value}\" inputId=\"${3:inputId}\"></p-radioButton>"
+		],
+		"description": "Reactive Forms p-radioButton"
+	},
+	"RatingBasic": {
+		"scope": "html",
+		"prefix": "p-rating-basic",
+		"body": [
+			"<p-rating [(ngModel)]=\"${1:value}\"></p-rating>"
+		],
+		"description": "Basic p-rating"
+	},
+	"RatingReactive": {
+		"scope": "html",
+		"prefix": "p-rating-reactive",
+		"body": [
+			"<p-rating formControlName=\"${1:name}\"></p-rating>"
+		],
+		"description": "Reactive Forms p-rating"
+	},
+	"SelectButtonBasic": {
+		"scope": "html",
+		"prefix": "p-selectButton-basic",
+		"body": [
+			"<p-selectButton [options]=\"${1:stateOptions}\" [(ngModel)]=\"${2:value}\" optionLabel=\"${3:optionLabel}\" optionValue=\"${4:optionValue}\"></p-selectButton>"
+		],
+		"description": "Basic p-selectButton"
+	},
+	"SelectButtonReactive": {
+		"scope": "html",
+		"prefix": "p-selectButton-reactive",
+		"body": [
+			"<p-selectButton [options]=\"${1:stateOptions}\" formControlName=\"${2:value}\" optionLabel=\"${3:optionLabel}\" optionValue=\"${4:optionValue}\"></p-selectButton>"
+		],
+		"description": "Reactive Forms p-selectButton"
+	},
+	"SliderBasic": {
+		"scope": "html",
+		"prefix": "p-slider-basic",
+		"body": [
+			"<p-slider [(ngModel)]=\"${1:value}\"></p-slider>"
+		],
+		"description": "Basic p-slider"
+	},
+	"SliderReactive": {
+		"scope": "html",
+		"prefix": "p-slider-reactive",
+		"body": [
+			"<p-slider formControlName=\"${1:name}\"></p-slider>"
+		],
+		"description": "Reactive Forms p-slider"
+	},
+	"TreeSelectBasic": {
+		"scope": "html",
+		"prefix": "p-treeSelect-basic",
+		"body": [
+			"<p-treeSelect [(ngModel)]=\"${1:selectedNodes}\" [options]=\"${2:nodes}\" placeholder=\"${3:Select Item}\" ></p-treeSelect>"
+		],
+		"description": "Basic p-treeSelect"
+	},
+	"TreeSelectReactive": {
+		"scope": "html",
+		"prefix": "p-treeSelect-reactive",
+		"body": [
+			"<p-treeSelect formControlName=\"${1:selectedNodes}\" [options]=\"${2:nodes}\" placeholder=\"${3:Select Item}\" ></p-treeSelect>"
+		],
+		"description": "Reactive Forms p-treeSelect"
+	},
+	"TriStateCheckboxBasic": {
+		"scope": "html",
+		"prefix": "p-triStateCheckbox-basic",
+		"body": [
+			"<p-triStateCheckbox [(ngModel)]=\"${1:value}\" inputId=\"${2:tricheckbox}\" ></p-triStateCheckbox>"
+		],
+		"description": "Basic p-triStateCheckbox"
+	},
+	"TriStateCheckboxReactive": {
+		"scope": "html",
+		"prefix": "p-triStateCheckbox-reactive",
+		"body": [
+			"<p-triStateCheckbox formControlName=\"${1:value}\" inputId=\"${2:tricheckbox}\" ></p-triStateCheckbox>"
+		],
+		"description": "Reactive Forms p-triStateCheckbox"
+	},
+	"ToggleButtonBasic": {
+		"scope": "html",
+		"prefix": "p-toggleButton-basic",
+		"body": [
+			"<p-toggleButton [(ngModel)]=\"${1:value}\" onLabel=\"${2:Yes}\" offLabel=\"${3:No}\"></p-toggleButton>"
+		],
+		"description": "Basic p-toggleButton"
+	},
+	"ToggleButtonReactive": {
+		"scope": "html",
+		"prefix": "p-toggleButton-reactive",
+		"body": [
+			"<p-toggleButton formControlName=\"${1:value}\" onLabel=\"${2:Yes}\" offLabel=\"${3:No}\"></p-toggleButton>"
+		],
+		"description": "Reactive Forms p-toggleButton"
+	}
 }
-
