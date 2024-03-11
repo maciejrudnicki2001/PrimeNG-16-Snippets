@@ -500,5 +500,288 @@
       "<p-toggleButton formControlName=\"${1:value}\" onLabel=\"${2:Yes}\" offLabel=\"${3:No}\"></p-toggleButton>"
     ],
     "description": "Reactive Forms p-toggleButton"
+  },
+  "ButtonBasic": {
+    "scope": "html",
+    "prefix": "p-button-basic",
+    "body": ["<p-button label=\"${1:name}\"></p-button>"],
+    "description": "Basic p-button"
+  },
+  "ButtonDirective": {
+    "scope": "html",
+    "prefix": "p-button-directive",
+    "body": [
+      "<button pButton pRipple type=\"${1:button}\" class=\"${2:p-button-success}\">name</button>"
+    ],
+    "description": "pButton Directive"
+  },
+  "SplitButtonBasic": {
+    "scope": "html",
+    "prefix": "p-splitButton-basic",
+    "body": [
+      "<p-splitButton label=\"${1:Save}\" icon=\"${2:pi pi-plus}\" (onClick)=\"${3:save('info')}\" [model]=\"${4:items}\"></p-splitButton>"
+    ],
+    "description": "Basic p-splitButton"
+  },
+  "SpeedDialLinearUp": {
+    "scope": "html",
+    "prefix": "p-speedDial-linear-up",
+    "body": [
+      "<p-speedDial [model]=\"${1:items}\" direction=\"${2:up}\"></p-speedDial>"
+    ],
+    "description": "SpeedDial Linear Up"
+  },
+  "SpeedDialLinearDown": {
+    "scope": "html",
+    "prefix": "p-speedDial-linear-down",
+    "body": [
+      "<p-speedDial [model]=\"${1:items}\" direction=\"${2:down}\"></p-speedDial>"
+    ],
+    "description": "SpeedDial Linear Down"
+  },
+  "SpeedDialLinearLeft": {
+    "scope": "html",
+    "prefix": "p-speedDial-linear-left",
+    "body": [
+      "<p-speedDial [model]=\"${1:items}\" direction=\"${2:left}\"></p-speedDial>"
+    ],
+    "description": "SpeedDial Linear Left"
+  },
+  "SpeedDialLinearRight": {
+    "scope": "html",
+    "prefix": "p-speedDial-linear-right",
+    "body": [
+      "<p-speedDial [model]=\"${1:items}\" direction=\"${2:right}\"></p-speedDial>"
+    ],
+    "description": "SpeedDial Linear Right"
+  },
+  "SpeedDialCircle": {
+    "scope": "html",
+    "prefix": "p-speedDial-circle",
+    "body": [
+      "<p-speedDial [model]=\"${1:items}\" type=\"${2:circle}\" [radius]=\"${3:80}\" buttonClassName=\"${4:p-button-class}\"></p-speedDial>"
+    ],
+    "description": "SpeedDial Circle"
+  },
+  "SpeedDialSemiCircleUp": {
+    "scope": "html",
+    "prefix": "p-speedDial-semi-circle-up",
+    "body": [
+      "<p-speedDial [model]=\"${1:items}\" direction=\"${2:up}\" [radius]=\"${3:80}\" type=\"${4:semi-circle}\"></p-speedDial>"
+    ],
+    "description": "SpeedDial Semi Circle Up"
+  },
+  "SpeedDialSemiCircleDown": {
+    "scope": "html",
+    "prefix": "p-speedDial-semi-circle-down",
+    "body": [
+      "<p-speedDial [model]=\"${1:items}\" direction=\"${2:down}\" [radius]=\"${3:80}\" type=\"${4:semi-circle}\"></p-speedDial>"
+    ],
+    "description": "SpeedDial Semi Circle Down"
+  },
+  "SpeedDialSemiCircleLeft": {
+    "scope": "html",
+    "prefix": "p-speedDial-semi-circle-left",
+    "body": [
+      "<p-speedDial [model]=\"${1:items}\" direction=\"${2:left}\" [radius]=\"${3:80}\" type=\"${4:semi-circle}\"></p-speedDial>"
+    ],
+    "description": "SpeedDial Semi Circle Left"
+  },
+  "SpeedDialSemiCircleRight": {
+    "scope": "html",
+    "prefix": "p-speedDial-semi-circle-right",
+    "body": [
+      "<p-speedDial [model]=\"${1:items}\" direction=\"${2:right}\" [radius]=\"${3:80}\" type=\"${4:semi-circle}\"></p-speedDial>"
+    ],
+    "description": "SpeedDial Semi Circle Right"
+  },
+  "TableBasic": {
+    "scope": "html",
+    "prefix": "p-table-basic",
+    "body": [
+      "<p-table [value]=\"${1:products}\" [tableStyle]=\"${2:{ 'min-width': '50rem' }}\">",
+      "<ng-template pTemplate=\"${3:header}\">",
+      "<tr>",
+      "<th>\"${4:first-th-name}\"</th>",
+      "<th>\"${5:second-th-name}\"</th>",
+      "<th>\"${6:third-th-name}\"</th>",
+      "</tr>",
+      "</ng-template>",
+      "<ng-template pTemplate=\"${7:body}\" let-product>",
+      "<tr>",
+      "<td>{{ \"${9:product.first-td-name}\" }}</td>",
+      "<td>{{ \"${10:product.second-td-name}\" }}</td>",
+      "<td>{{ \"${11:product.third-td-name}\" }}</td>",
+      "</tr>",
+      "</ng-template>",
+      "</p-table>"
+    ],
+    "description": "Basic p-table"
+  },
+  "TableDynamic": {
+    "scope": "html",
+    "prefix": "p-table-dynamic",
+    "body": [
+      "<p-table [value]=\"${1:products}\" [tableStyle]=\"${2:{ 'min-width': '50rem' }}\">",
+      "<ng-template pTemplate=\"${3:header}\">",
+      "<tr>",
+      "<th *ngFor=\"let col of ${4:cols}\">{{ col.header }}</th>",
+      "</tr>",
+      "</ng-template>",
+      "<ng-template pTemplate=\"${5:body}\" let-product>",
+      "<tr>",
+      "<td *ngFor=\"let col of ${6:cols}\">{{ product[col.field] }}</td>",
+      "</tr>",
+      "</ng-template>",
+      "</p-table>"
+    ],
+    "description": "Dynamic p-table"
+  },
+  "DataViewBasic": {
+    "scope": "html",
+    "prefix": "p-dataView-basic",
+    "body": [
+      "<p-dataView #dv [value]=\"${1:products}\" [paginator]=\"${2:true}\" [rows]=\"${3:10}\">",
+      "<ng-template pTemplate=\"${4:itemTemplate}\" let-product>",
+      "<div class=\"product-item\">",
+      "<h4>{{ product.name }}</h4>",
+      "<p>{{ product.description }}</p>",
+      "</div>",
+      "</ng-template>",
+      "</p-dataView>"
+    ],
+    "description": "Basic p-dataView"
+  },
+  "ScrollerBasic": {
+    "scope": "html",
+    "prefix": "p-scroller-basic",
+    "body": [
+      "<p-scroller [items]=\"${1:items}\" [itemSize]=\"${2:number}\" scrollHeight=\"${3:200px}\" styleClass=\"${4:border-1 surface-border}\" [style]=\"${5:{'width': '200px', 'height': '200px'}}\">",
+      "<ng-template pTemplate=\"${6:item}\" let-item let-options=\"${7:options}\">",
+      "<div class=\"${8:flex align-items-center p-2}\" [ngClass]=\"${9:{ 'surface-ground': options.odd }}\" style=\"${10:height: 50px;}\">{{ \"${11:item}\" }}</div>",
+      "</ng-template>",
+      "</p-scroller>"
+    ],
+    "description": "Basic p-scroller"
+  },
+  "OrderListBasic": {
+    "scope": "html",
+    "prefix": "p-orderList-basic",
+    "body": [
+      "<p-orderList [value]=\"${1:products}\" [header]=\"${2:OrderList}\" [listStyle]=\"${3:{'min-height': '250px'}}\">",
+      "<ng-template let-product pTemplate=\"${4:item}\">",
+      "<div class=\"${5:flex flex-wrap p-2 align-items-center gap-3}\">",
+      "<img src=\"${6:path-to-image-{{product.name}}}\" alt=\"${7:product.name}\" class=\"${8:w-4rem shadow-2 flex-shrink-0 border-round}\"/>",
+      "<div class=\"${9:flex-1 flex flex-column gap-2}\">",
+      "<span class=\"${10:font-bold}\"> {{ ${11:product.name} }} </span>",
+      "<div class=\"${12:flex align-items-center gap-2}\">",
+      "<i class=\"${13:pi pi-tag text-sm}\"></i>",
+      "<span>{{ ${14:product.category} }}</span>",
+      "</div>",
+      "</div>",
+      "<span class=\"${15:font-bold text-900}\">{{ ${16:'$' + product.price }}}</span>",
+      "</div>",
+      "</ng-template>",
+      "</p-orderList>"
+    ],
+    "description": "Basic p-orderList"
+  },
+  "OrgChartBasic": {
+    "scope": "html",
+    "prefix": "p-organizationChart-basic",
+    "body": [
+      "<p-organizationChart [value]=\"${1:data}\"></p-organizationChart>"
+    ],
+    "description": "Basic p-organizationChart"
+  },
+  "PaginatorBasic": {
+    "scope": "html",
+    "prefix": "p-paginator-basic",
+    "body": [
+      "<p-paginator (onPageChange)=\"${1:onPageChange($event)}\" [first]=\"${2:0}\" [rows]=\"${3:10}\" [totalRecords]=\"${4:totalRecords}\" [rowsPerPageOptions]=\"${5:[10,20,30]}\"></p-paginator>"
+    ],
+    "description": "Basic p-paginator"
+  },
+  "PickListBasic": {
+    "scope": "html",
+    "prefix": "p-pickList-basic",
+    "body": [
+      "<p-pickList [source]=\"${1:sourceProducts}\" [target]=\"${2:targetProducts}\" sourceHeader=\"${3:Available}\" targetHeader=\"${4:Selected}\" [dragdrop]=\"${5:true}\" [responsive]=\"${6:true}\" [sourceStyle]=\"${7:{ height: '30rem' }}\" [targetStyle]=\"${8:{ height: '30rem' }}\" breakpoint=\"${9:1400px}\">",
+      "<ng-template let-product pTemplate=\"${10:item}\">",
+      "<div class=\"${11:flex flex-wrap p-2 align-items-center gap-3}\">",
+      "<img src=\"${12:path-to-image-{{product.name}}}\" alt=\"${13:product.name}\" class=\"${14:w-4rem shadow-2 flex-shrink-0 border-round}\"/>",
+      "<div class=\"${15:flex-1 flex flex-column gap-2}\">",
+      "<span class=\"${16:font-bold}\"> {{ ${17:product.name} }} </span>",
+      "<div class=\"${18:flex align-items-center gap-2}\">",
+      "<i class=\"${19:pi pi-tag text-sm}\"></i>",
+      "<span>{{ ${20:product.category} }}</span>",
+      "</div>",
+      "</div>",
+      "<span class=\"${21:font-bold text-900}\">{{ ${22:'$' + product.price }}}</span>",
+      "</div>",
+      "</ng-template>",
+      "</p-pickList>"
+    ],
+    "description": "Basic p-pickList"
+  },
+  "TreeBasic": {
+    "scope": "html",
+    "prefix": "p-tree-basic",
+    "body": [
+      "<p-tree class=\"${1:w-full md:w-30rem}\" [value]=\"${2:files}\"></p-tree>"
+    ],
+    "description": "Basic p-tree"
+  },
+  "TreeTableBasic": {
+    "scope": "html",
+    "prefix": "p-treeTable-basic",
+    "body": [
+      "<p-treeTable [value]=\"${1:files}\" [scrollable]=\"${2:true}\" [tableStyle]=\"${3:{'min-width':'50rem'}}\">",
+      "<ng-template pTemplate=\"${4:header}\">",
+      "<tr>",
+      "<th>${5:first-th-name}</th>",
+      "<th>${6:second-th-name}</th>",
+      "<th>${7:third-th-name}</th>",
+      "</tr>",
+      "</ng-template>",
+      "<ng-template pTemplate=\"${8:body}\" let-rowNode let-rowData=\"${9:rowData}\">",
+      "<tr [ttRow]=\"${10:rowNode}\">",
+      "<td>",
+      "<p-treeTableToggler [rowNode]=\"${11:rowNode}\"></p-treeTableToggler>",
+      "{{ ${12:file.first-td-name} }}",
+      "</td>",
+      "<td>{{ ${13:file.second-td-name} }}</td>",
+      "<td>{{ ${14:file.third-td-name} }}</td>",
+      "</tr>",
+      "</ng-template>",
+      "</p-treeTable>"
+    ],
+    "description": "Basic p-treeTable"
+  },
+  "TimelineBasic": {
+    "scope": "html",
+    "prefix": "p-timeline-basic",
+    "body": [
+      "<p-timeline [value]=\"${1:events}\">",
+      "<ng-template pTemplate=\"${2:content}\" let-event>",
+      "{{ ${3:event.status} }}",
+      "</ng-template>",
+      "</p-timeline>"
+    ],
+    "description": "Basic p-timeline"
+  },
+  "VirtualScrollerBasic": {
+    "scope": "html",
+    "prefix": "p-virtualScroller-basic",
+    "body": [
+      "<p-virtualScroller [value]=\"${1:items}\" class=\"${2:border-1 surface-border border-round}\" [style]=\"${3:{'width': '200px'}}\" scrollHeight=\"${4:200px}\" [itemSize]=\"${5:50}\">",
+      "<ng-template pTemplate=\"${6:item}\" let-item>",
+      "<div class=\"${7:flex align-items-center p-2 h-full}\" [ngClass]=\"${8:{ 'surface-hover': item.index % 2 === 0 }}\">",
+      "{{ ${9:item.label} }}",
+      "</div>",
+      "</ng-template>",
+      "</p-virtualScroller>"
+    ],
+    "description": "Basic p-virtualScroller"
   }
 }

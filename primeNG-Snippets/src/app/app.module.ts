@@ -29,6 +29,20 @@ import { SliderModule } from 'primeng/slider';
 import { TreeSelectModule } from 'primeng/treeselect';
 import { TriStateCheckboxModule } from 'primeng/tristatecheckbox';
 import { ToggleButtonModule } from 'primeng/togglebutton';
+import { ButtonModule } from 'primeng/button';
+import { SplitButtonModule } from 'primeng/splitbutton';
+import { SpeedDialModule } from 'primeng/speeddial';
+import { TableModule } from 'primeng/table';
+import { DataViewModule } from 'primeng/dataview';
+import { ScrollerModule } from 'primeng/scroller';
+import { OrderListModule } from 'primeng/orderlist';
+import { OrganizationChartModule } from 'primeng/organizationchart';
+import { PaginatorModule } from 'primeng/paginator';
+import { PickListModule } from 'primeng/picklist';
+import { TreeModule } from 'primeng/tree';
+import { TreeTableModule } from 'primeng/treetable';
+import { TimelineModule } from 'primeng/timeline';
+import { VirtualScrollerModule } from 'primeng/virtualscroller';
 
 @NgModule({
   declarations: [AppComponent],
@@ -61,6 +75,20 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
     TreeSelectModule,
     TriStateCheckboxModule,
     ToggleButtonModule,
+    ButtonModule,
+    SplitButtonModule,
+    SpeedDialModule,
+    TableModule,
+    DataViewModule,
+    ScrollerModule,
+    OrderListModule,
+    OrganizationChartModule,
+    PaginatorModule,
+    PickListModule,
+    TreeModule,
+    TreeTableModule,
+    TimelineModule,
+    VirtualScrollerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
