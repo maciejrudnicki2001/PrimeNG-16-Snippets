@@ -30,6 +30,9 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
 import { TreeSelectModule } from 'primeng/treeselect';
 import { TriStateCheckboxModule } from 'primeng/tristatecheckbox';
 import { AppComponent } from './app.component';
+import { ProgressBarModule } from 'primeng/progressbar';
+import { ToastModule } from 'primeng/toast';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -65,6 +68,9 @@ import { AppComponent } from './app.component';
     ButtonModule,
     AnimateOnScrollModule,
     AutoFocusModule,
+    ProgressBarModule,
+    ToastModule
+
   ],
   providers: [],
   bootstrap: [AppComponent],
