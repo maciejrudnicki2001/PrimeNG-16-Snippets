@@ -1,3 +1,5 @@
+import { AppComponent } from './app.component';
+
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -29,8 +31,6 @@ import { SliderModule } from 'primeng/slider';
 import { ToggleButtonModule } from 'primeng/togglebutton';
 import { TreeSelectModule } from 'primeng/treeselect';
 import { TriStateCheckboxModule } from 'primeng/tristatecheckbox';
-import { ToggleButtonModule } from 'primeng/togglebutton';
-import { ButtonModule } from 'primeng/button';
 import { SplitButtonModule } from 'primeng/splitbutton';
 import { SpeedDialModule } from 'primeng/speeddial';
 import { TableModule } from 'primeng/table';
