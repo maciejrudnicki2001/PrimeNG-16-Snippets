@@ -1014,5 +1014,65 @@
       "<p-avatar image='${1:https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png}' pBadge value='${2:4}' severity='${3:danger}'></p-avatar>"
     ],
     "description": "p-avatar with badge"
-  }
+  },
+  "Drag&DropBasic": {
+	"scope": "html",
+	"prefix": "p-drag-and-drop",
+	"body": [
+		"<div class=\"${1:your-class-name}\">",
+		"    <ul class=\"${2:your-class-name}\">",
+		"       <li *ngFor=\"let product of availableProducts\" class=\"p-2 border-round shadow-1\" pDraggable (onDragStart)=\"dragStart(product)\" (onDragEnd)=\"dragEnd()\">",
+		"            {{product.name}}",
+		"        </li>",
+		"    </ul>",
+		"</div>",
+		"<div class=\"${3:your-class-name}\" pDroppable (onDrop)=\"drop()\">",
+		"    <p class=\"${4:your-class-name}\">Drop Zone</p>",
+		"    <ul class=\"${5:your-class-name}\" *ngIf=\"selectedProducts\" >",
+		"        <li *ngFor=\"let product of selectedProducts\" class=\"${6:your-class-name}\">",
+		"            {{product.name}}",
+		"        </li>",
+		"    </ul>",
+		"</div>"
+	],
+	"description": "Basic Drag and Drop"
+  },
+  "ImagePreview": {
+	"scope": "html",
+	"prefix": "p-image-preview",
+	"body": [
+		"<p-image src=\"${1:your-image-source}\" alt=\"Image\" width=\"250\" [preview]=\"true\"></p-image>"
+	],
+	"description": "Image Preview"
+  },
+  "GalleriaBasic": {
+	"scope": "html",
+	"prefix": "p-galleria-basic",
+	"body": [
+		"<p-galleria [(value)]=\"${1:images-array}\" [responsiveOptions]=\"responsiveOptions\" [containerStyle]=\"{ 'max-width': '640px' }\" [numVisible]=\"${2:int}\">",
+		"    <ng-template pTemplate=\"item\" let-item>",
+		"        <img [src]=\"item.itemImageSrc\" style=\"width: 100%;\" />",
+		"    </ng-template>",
+		"    <ng-template pTemplate=\"thumbnail\" let-item>",
+		"        <div class=\"grid grid-nogutter justify-content-center\">",
+		"            <img [src]=\"item.thumbnailImageSrc\"/>",
+		"        </div>",
+		"    </ng-template>",
+		"</p-galleria>"
+	],
+	"description": "Basic Galleria"
+  },
+  "GalleriaIndicator": {
+	"scope": "html",
+	"prefix": "p-galleria-indicator",
+	"body": [
+		"<p-galleria [(value)]=\"images\" [showIndicators]=\"true\" [showThumbnails]=\"false\" [responsiveOptions]=\"responsiveOptions\" [containerStyle]=\"{ 'max-width': '640px' }\">",
+		"    <ng-template pTemplate=\"item\" let-item>",
+		"        <img [src]=\"item.itemImageSrc\" style=\"width: 100%; display: block;\"/>",
+		"    </ng-template>",
+		"</p-galleria>"
+	],
+	"description": "Galleria with Indicator"
+  },
+  
 }
