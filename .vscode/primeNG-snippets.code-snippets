@@ -1074,5 +1074,101 @@
 	],
 	"description": "Galleria with Indicator"
   },
+  "CarouselBasic": {
+    "scope": "html",
+    "prefix": "p-carousel-basic",
+    "body": [
+      "<p-carousel [value]=\"${1:objects}\" [numVisible]=\"${2:int}\" [numScroll]=\"${3:int}\" [circular]=\"true\" [responsiveOptions]=\"responsiveOptions\" autoplayInterval=\"3000\">",
+      "    <ng-template let-product pTemplate=\"item\">",
+      "        <div class=\"border-1 surface-border border-round m-2 text-center py-5 px-3\">",
+      "            <div class=\"mb-3\">",
+      "               <img [src]=\"product.image\" alt=\"${4:product.name}\" class=\"product-image\"/>",
+      "            </div>",
+      "            <div>",
+      "                <h4 class=\"mb-1\">{{ ${5:product.name}}</h4>",
+      "                <p>{{ ${6:product.price}}</p>",
+      "            </div>",
+      "        </div>",
+      "    </ng-template>",
+      "</p-carousel>",
+    ],
+    "description": "Basic p-carousel"
+  },
+  "ToastBasic": {
+    "scope": "html",
+    "prefix": "p-toast-basic",
+    "body": [
+      "<p-toast></p-toast>"
+    ],
+    "description": "Basic p-toast"
+  },
+  "ToastSeverity": {
+    "scope": "html",
+    "prefix": "p-toast-severity",
+    "body": [
+      "<p-toast></p-toast>",
+      "<button (click)=\"showSuccess()\">${1:Show Success}</button>",
+      "<button (click)=\"showInfo()\">${2:Show Info}</button>",
+      "<button (click)=\"showWarn()\">${3:Show Warn}</button>",
+      "<button (click)=\"showError()\">${4:Show Error}</button>"
+    ],
+    "description": "p-toast with severity"
+  },
+  "MessageBasic": {
+    "scope": "html",
+    "prefix": "p-message-basic",
+    "body": [
+      "<p-messages [(value)]=\"messages\" [enableService]=\"false\" [closable]=\"false\"></p-messages>"
+    ],
+    "description": "Basic p-message"
+  },
+  "MessageClosable": {
+    "scope": "html",
+    "prefix": "p-message-closable",
+    "body": [
+      "<p-messages [(value)]=\"messages\" [enableService]=\"false\" [closable]=\"true\"></p-messages>"
+    ],
+    "description": "p-message with closable"
+  },
+  "ChartBasic": {
+    "scope": "html",
+    "prefix": "p-chart-basic",
+    "body": [
+      "<p-chart type=\"${1:bar}\" [data]=\"${2:data}\" [options]=\"${3:options}\"></p-chart>"
+    ],
+    "description": "Basic p-chart"
+  },
+  "ChartPie": {
+    "scope": "html",
+    "prefix": "p-chart-pie",
+    "body": [
+      "<p-chart type=\"${1:pie}\" [data]=\"${2:data}\" [options]=\"${3:options}\"></p-chart>"
+    ],
+    "description": "p-chart with pie type"
+  },
+  "ChartDoughnut": {
+    "scope": "html",
+    "prefix": "p-chart-doughnut",
+    "body": [
+      "<p-chart type=\"${1:doughnut}\" [data]=\"${2:data}\" [options]=\"${3:options}\"></p-chart>"
+    ],
+    "description": "p-chart with doughnut type"
+  },
+  "ChartLine": {
+    "scope": "html",
+    "prefix": "p-chart-line",
+    "body": [
+      "<p-chart type=\"${1:line}\" [data]=\"${2:data}\" [options]=\"${3:options}\"></p-chart>"
+    ],
+    "description": "p-chart with line type"
+  },
+  "ChartRadar": {
+    "scope": "html",
+    "prefix": "p-chart-radar",
+    "body": [
+      "<p-chart type=\"${1:radar}\" [data]=\"${2:data}\" [options]=\"${3:options}\"></p-chart>"
+    ],
+    "description": "p-chart with radar type"
+  },
   
 }
