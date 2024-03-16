@@ -18,13 +18,17 @@
   "CalendarBasic": {
     "scope": "html",
     "prefix": "p-calendar-basic",
-    "body": ["<p-calendar [(ngModel)]=\"${1:date}\"></p-calendar>"],
+    "body": [
+      "<p-calendar [(ngModel)]=\"${1:date}\"></p-calendar>"
+    ],
     "description": "Basic p-calendar"
   },
   "CalendarReactive": {
     "scope": "html",
     "prefix": "p-calendar-reactive",
-    "body": ["<p-calendar formControlName=\"${1:name}\"></p-calendar>"],
+    "body": [
+      "<p-calendar formControlName=\"${1:name}\"></p-calendar>"
+    ],
     "description": "Reactive Forms p-calendar"
   },
   "CascadeSelectBasic": {
@@ -62,25 +66,33 @@
   "ChipsBasic": {
     "scope": "html",
     "prefix": "p-chips-basic",
-    "body": ["<p-chips [(ngModel)]=\"${1:value}\"></p-chips>"],
+    "body": [
+      "<p-chips [(ngModel)]=\"${1:value}\"></p-chips>"
+    ],
     "description": "Basic p-chips"
   },
   "ChipsReactive": {
     "scope": "html",
     "prefix": "p-chips-reactive",
-    "body": ["<p-chips formControlName=\"${1:name}\"></p-chips>"],
+    "body": [
+      "<p-chips formControlName=\"${1:name}\"></p-chips>"
+    ],
     "description": "Reactive Forms p-chips"
   },
   "ColorPickerBasic": {
     "scope": "html",
     "prefix": "p-colorPicker-basic",
-    "body": ["<p-colorPicker [(ngModel)]=\"${1:color}\"></p-colorPicker>"],
+    "body": [
+      "<p-colorPicker [(ngModel)]=\"${1:color}\"></p-colorPicker>"
+    ],
     "description": "Basic p-colorPicker"
   },
   "ColorPickerReactive": {
     "scope": "html",
     "prefix": "p-colorPicker-reactive",
-    "body": ["<p-colorPicker formControlName=\"${1:name}\"></p-colorPicker>"],
+    "body": [
+      "<p-colorPicker formControlName=\"${1:name}\"></p-colorPicker>"
+    ],
     "description": "Reactive Forms p-colorPicker"
   },
   "DropdownBasic": {
@@ -102,13 +114,17 @@
   "EditorBasic": {
     "scope": "html",
     "prefix": "p-editor-basic",
-    "body": ["<p-editor [(ngModel)]=\"${1:text}\"></p-editor>"],
+    "body": [
+      "<p-editor [(ngModel)]=\"${1:text}\"></p-editor>"
+    ],
     "description": "Basic p-editor"
   },
   "EditorReactive": {
     "scope": "html",
     "prefix": "p-editor-reactive",
-    "body": ["<p-editor formControlName=\"${1:text}\"></p-editor>"],
+    "body": [
+      "<p-editor formControlName=\"${1:text}\"></p-editor>"
+    ],
     "description": "Reactive Forms p-editor"
   },
   "InputGroupBasic": {
@@ -138,19 +154,25 @@
   "InputSwitchBasic": {
     "scope": "html",
     "prefix": "p-inputSwitch-basic",
-    "body": ["<p-inputSwitch [(ngModel)]=\"${1:checked}\"></p-inputSwitch>"],
+    "body": [
+      "<p-inputSwitch [(ngModel)]=\"${1:checked}\"></p-inputSwitch>"
+    ],
     "description": "Basic p-inputSwitch"
   },
   "InputSwitchReactive": {
     "scope": "html",
     "prefix": "p-inputSwitch-reactive",
-    "body": ["<p-inputSwitch formControlName=\"${1:name}\"></p-inputSwitch>"],
+    "body": [
+      "<p-inputSwitch formControlName=\"${1:name}\"></p-inputSwitch>"
+    ],
     "description": "Reactive Forms p-inputSwitch"
   },
   "InputTextBasic": {
     "scope": "html",
     "prefix": "p-inputText-basic",
-    "body": ["<input type=\"${1:text}\" pInputText [(ngModel)]=\"${2:text}\">"],
+    "body": [
+      "<input type=\"${1:text}\" pInputText [(ngModel)]=\"${2:text}\">"
+    ],
     "description": "Basic p-inputText"
   },
   "InputTextReactive": {
@@ -244,13 +266,17 @@
   "KnobBasic": {
     "scope": "html",
     "prefix": "p-knob-basic",
-    "body": ["<p-knob [(ngModel)]=\"${1:value}\"></p-knob>"],
+    "body": [
+      "<p-knob [(ngModel)]=\"${1:value}\"></p-knob>"
+    ],
     "description": "Basic p-knob"
   },
   "KnobReactive": {
     "scope": "html",
     "prefix": "p-knob-reactive",
-    "body": ["<p-knob formControlName=\"${1:name}\"></p-knob>"],
+    "body": [
+      "<p-knob formControlName=\"${1:name}\"></p-knob>"
+    ],
     "description": "Reactive Forms p-knob"
   },
   "KeyFilterIntBasic": {
@@ -416,13 +442,17 @@
   "RatingBasic": {
     "scope": "html",
     "prefix": "p-rating-basic",
-    "body": ["<p-rating [(ngModel)]=\"${1:value}\"></p-rating>"],
+    "body": [
+      "<p-rating [(ngModel)]=\"${1:value}\"></p-rating>"
+    ],
     "description": "Basic p-rating"
   },
   "RatingReactive": {
     "scope": "html",
     "prefix": "p-rating-reactive",
-    "body": ["<p-rating formControlName=\"${1:name}\"></p-rating>"],
+    "body": [
+      "<p-rating formControlName=\"${1:name}\"></p-rating>"
+    ],
     "description": "Reactive Forms p-rating"
   },
   "SelectButtonBasic": {
@@ -444,13 +474,17 @@
   "SliderBasic": {
     "scope": "html",
     "prefix": "p-slider-basic",
-    "body": ["<p-slider [(ngModel)]=\"${1:value}\"></p-slider>"],
+    "body": [
+      "<p-slider [(ngModel)]=\"${1:value}\"></p-slider>"
+    ],
     "description": "Basic p-slider"
   },
   "SliderReactive": {
     "scope": "html",
     "prefix": "p-slider-reactive",
-    "body": ["<p-slider formControlName=\"${1:name}\"></p-slider>"],
+    "body": [
+      "<p-slider formControlName=\"${1:name}\"></p-slider>"
+    ],
     "description": "Reactive Forms p-slider"
   },
   "TreeSelectBasic": {
@@ -504,7 +538,9 @@
   "ButtonBasic": {
     "scope": "html",
     "prefix": "p-button-basic",
-    "body": ["<p-button label=\"${1:name}\"></p-button>"],
+    "body": [
+      "<p-button label=\"${1:name}\"></p-button>"
+    ],
     "description": "Basic p-button"
   },
   "ButtonDirective": {
@@ -923,7 +959,9 @@
   "MeterGroupBasic": {
     "scope": "html",
     "prefix": "p-meterGroup-basic",
-    "body": ["<p-meterGroup [value]='${1:value}'></p-meterGroup>"],
+    "body": [
+      "<p-meterGroup [value]='${1:value}'></p-meterGroup>"
+    ],
     "description": "Basic p-meterGroup"
   },
   "InplaceBasic": {
@@ -946,43 +984,57 @@
   "ChipBasic": {
     "scope": "html",
     "prefix": "p-chip-basic",
-    "body": ["<p-chip label='${1:Text}'></p-chip>"],
+    "body": [
+      "<p-chip label='${1:Text}'></p-chip>"
+    ],
     "description": "Basic p-chip"
   },
   "ChipIcon": {
     "scope": "html",
     "prefix": "p-chip-icon",
-    "body": ["<p-chip label='${1:Text}' icon='${2:pi pi-user}'></p-chip>"],
+    "body": [
+      "<p-chip label='${1:Text}' icon='${2:pi pi-user}'></p-chip>"
+    ],
     "description": "p-chip with icon"
   },
   "BlockUIDocument": {
     "scope": "html",
     "prefix": "p-blockUIDocument",
-    "body": ["<p-blockUI [blocked]='${1:blocked}'></p-blockUI>"],
+    "body": [
+      "<p-blockUI [blocked]='${1:blocked}'></p-blockUI>"
+    ],
     "description": "Block UI Document"
   },
   "BadgeBasic": {
     "scope": "html",
     "prefix": "p-badge-basic",
-    "body": ["<p-badge [value]='${1:Text}'></p-badge>"],
+    "body": [
+      "<p-badge [value]='${1:Text}'></p-badge>"
+    ],
     "description": "Basic p-badge"
   },
   "BadgeDirective": {
     "scope": "html",
     "prefix": "p-badge-directive",
-    "body": ["<i class='pi pi-bell text-3xl' pBadge value='${1:2}'></i>"],
+    "body": [
+      "<i class='pi pi-bell text-3xl' pBadge value='${1:2}'></i>"
+    ],
     "description": "p-badge directive"
   },
   "BadgeSeverity": {
     "scope": "html",
     "prefix": "p-badge-severity",
-    "body": ["<p-badge [value]='${1:2}' severity='${2:success}'></p-badge>"],
+    "body": [
+      "<p-badge [value]='${1:2}' severity='${2:success}'></p-badge>"
+    ],
     "description": "p-badge with severity"
   },
   "BadgeSize": {
     "scope": "html",
     "prefix": "p-badge-size",
-    "body": ["<p-badge [value]='${1:2}' size='${2:large}'></p-badge>"],
+    "body": [
+      "<p-badge [value]='${1:2}' size='${2:large}'></p-badge>"
+    ],
     "description": "p-badge with size"
   },
   "BadgeButton": {
@@ -996,7 +1048,9 @@
   "AvatarIcon": {
     "scope": "html",
     "prefix": "p-avatar-icon",
-    "body": ["<p-avatar icon='${1:pi pi-user}'></p-avatar>"],
+    "body": [
+      "<p-avatar icon='${1:pi pi-user}'></p-avatar>"
+    ],
     "description": "p-avatar with icon"
   },
   "AvatarImage": {
@@ -1016,63 +1070,63 @@
     "description": "p-avatar with badge"
   },
   "Drag&DropBasic": {
-	"scope": "html",
-	"prefix": "p-drag-and-drop",
-	"body": [
-		"<div class=\"${1:your-class-name}\">",
-		"    <ul class=\"${2:your-class-name}\">",
-		"       <li *ngFor=\"let product of availableProducts\" class=\"p-2 border-round shadow-1\" pDraggable (onDragStart)=\"dragStart(product)\" (onDragEnd)=\"dragEnd()\">",
-		"            {{product.name}}",
-		"        </li>",
-		"    </ul>",
-		"</div>",
-		"<div class=\"${3:your-class-name}\" pDroppable (onDrop)=\"drop()\">",
-		"    <p class=\"${4:your-class-name}\">Drop Zone</p>",
-		"    <ul class=\"${5:your-class-name}\" *ngIf=\"selectedProducts\" >",
-		"        <li *ngFor=\"let product of selectedProducts\" class=\"${6:your-class-name}\">",
-		"            {{product.name}}",
-		"        </li>",
-		"    </ul>",
-		"</div>"
-	],
-	"description": "Basic Drag and Drop"
+    "scope": "html",
+    "prefix": "p-drag-and-drop",
+    "body": [
+      "<div class=\"${1:your-class-name}\">",
+      "    <ul class=\"${2:your-class-name}\">",
+      "       <li *ngFor=\"let product of availableProducts\" class=\"p-2 border-round shadow-1\" pDraggable (onDragStart)=\"dragStart(product)\" (onDragEnd)=\"dragEnd()\">",
+      "            {{product.name}}",
+      "        </li>",
+      "    </ul>",
+      "</div>",
+      "<div class=\"${3:your-class-name}\" pDroppable (onDrop)=\"drop()\">",
+      "    <p class=\"${4:your-class-name}\">Drop Zone</p>",
+      "    <ul class=\"${5:your-class-name}\" *ngIf=\"selectedProducts\" >",
+      "        <li *ngFor=\"let product of selectedProducts\" class=\"${6:your-class-name}\">",
+      "            {{product.name}}",
+      "        </li>",
+      "    </ul>",
+      "</div>"
+    ],
+    "description": "Basic Drag and Drop"
   },
   "ImagePreview": {
-	"scope": "html",
-	"prefix": "p-image-preview",
-	"body": [
-		"<p-image src=\"${1:your-image-source}\" alt=\"Image\" width=\"250\" [preview]=\"true\"></p-image>"
-	],
-	"description": "Image Preview"
+    "scope": "html",
+    "prefix": "p-image-preview",
+    "body": [
+      "<p-image src=\"${1:your-image-source}\" alt=\"Image\" width=\"250\" [preview]=\"true\"></p-image>"
+    ],
+    "description": "Image Preview"
   },
   "GalleriaBasic": {
-	"scope": "html",
-	"prefix": "p-galleria-basic",
-	"body": [
-		"<p-galleria [(value)]=\"${1:images-array}\" [responsiveOptions]=\"responsiveOptions\" [containerStyle]=\"{ 'max-width': '640px' }\" [numVisible]=\"${2:int}\">",
-		"    <ng-template pTemplate=\"item\" let-item>",
-		"        <img [src]=\"item.itemImageSrc\" style=\"width: 100%;\" />",
-		"    </ng-template>",
-		"    <ng-template pTemplate=\"thumbnail\" let-item>",
-		"        <div class=\"grid grid-nogutter justify-content-center\">",
-		"            <img [src]=\"item.thumbnailImageSrc\"/>",
-		"        </div>",
-		"    </ng-template>",
-		"</p-galleria>"
-	],
-	"description": "Basic Galleria"
+    "scope": "html",
+    "prefix": "p-galleria-basic",
+    "body": [
+      "<p-galleria [(value)]=\"${1:images-array}\" [responsiveOptions]=\"responsiveOptions\" [containerStyle]=\"{ 'max-width': '640px' }\" [numVisible]=\"${2:int}\">",
+      "    <ng-template pTemplate=\"item\" let-item>",
+      "        <img [src]=\"item.itemImageSrc\" style=\"width: 100%;\" />",
+      "    </ng-template>",
+      "    <ng-template pTemplate=\"thumbnail\" let-item>",
+      "        <div class=\"grid grid-nogutter justify-content-center\">",
+      "            <img [src]=\"item.thumbnailImageSrc\"/>",
+      "        </div>",
+      "    </ng-template>",
+      "</p-galleria>"
+    ],
+    "description": "Basic Galleria"
   },
   "GalleriaIndicator": {
-	"scope": "html",
-	"prefix": "p-galleria-indicator",
-	"body": [
-		"<p-galleria [(value)]=\"images\" [showIndicators]=\"true\" [showThumbnails]=\"false\" [responsiveOptions]=\"responsiveOptions\" [containerStyle]=\"{ 'max-width': '640px' }\">",
-		"    <ng-template pTemplate=\"item\" let-item>",
-		"        <img [src]=\"item.itemImageSrc\" style=\"width: 100%; display: block;\"/>",
-		"    </ng-template>",
-		"</p-galleria>"
-	],
-	"description": "Galleria with Indicator"
+    "scope": "html",
+    "prefix": "p-galleria-indicator",
+    "body": [
+      "<p-galleria [(value)]=\"images\" [showIndicators]=\"true\" [showThumbnails]=\"false\" [responsiveOptions]=\"responsiveOptions\" [containerStyle]=\"{ 'max-width': '640px' }\">",
+      "    <ng-template pTemplate=\"item\" let-item>",
+      "        <img [src]=\"item.itemImageSrc\" style=\"width: 100%; display: block;\"/>",
+      "    </ng-template>",
+      "</p-galleria>"
+    ],
+    "description": "Galleria with Indicator"
   },
   "CarouselBasic": {
     "scope": "html",
@@ -1170,5 +1224,412 @@
     ],
     "description": "p-chart with radar type"
   },
-  
+  "TieredMenuBasic": {
+    "scope": "html",
+    "prefix": "p-tieredMenu-basic",
+    "body": [
+      "<p-tieredMenu [model]=\"${1:items}\"></p-tieredMenu>"
+    ],
+    "description": "Basic p-tieredMenu"
+  },
+  "TieredMenuPoput": {
+    "scope": "html",
+    "prefix": "p-tieredMenu-poput",
+    "body": [
+      "<button type=\"button\" pButton label=\"${1:Show}\" (click)=\"toggle($event)\"></button>",
+      "<p-tieredMenu [model]=\"${2:items}\" [popup]=\"true\" [appendTo]=\"${3:body}\"></p-tieredMenu>"
+    ],
+    "description": "p-tieredMenu with popup"
+  },
+  "TabMenuBasic": {
+    "scope": "html",
+    "prefix": "p-tabMenu-basic",
+    "body": [
+      "<p-tabMenu [model]=\"${1:items}\"></p-tabMenu>"
+    ],
+    "description": "Basic p-tabMenu"
+  },
+  "TabMenuActiveItem": {
+    "scope": "html",
+    "prefix": "p-tabMenu-activeItem",
+    "body": [
+      "<p-tabMenu [model]=\"${1:items}\" [activeItem]=\"${2:item}\"></p-tabMenu>"
+    ],
+    "description": "p-tabMenu with active item"
+  },
+  "StepsBasic": {
+    "scope": "html",
+    "prefix": "p-steps-basic",
+    "body": [
+      "<p-steps [model]=\"${1:items}\" [readonly]=\"${2:true}\"></p-steps>"
+    ],
+    "description": "Basic p-steps"
+  },
+  "StepsInteractive": {
+    "scope": "html",
+    "prefix": "p-steps-interactive",
+    "body": [
+      "<p-steps [model]=\"${1:items}\" [activeIndex]=\"${2:activeIndex}\" (onStepChange)=\"${3:onChange($event)}\"></p-steps>"
+    ],
+    "description": "Interactive p-steps"
+  },
+  "PanelMenuBasic": {
+    "scope": "html",
+    "prefix": "p-panelMenu-basic",
+    "body": [
+      "<p-panelMenu [model]=\"${1:items}\"></p-panelMenu>"
+    ],
+    "description": "Basic p-panelMenu"
+  },
+  "PanelMenuMultiple": {
+    "scope": "html",
+    "prefix": "p-panelMenu-multiple",
+    "body": [
+      "<p-panelMenu [model]=\"${1:items}\" [multiple]=\"${2:true}\"></p-panelMenu>"
+    ],
+    "description": "p-panelMenu with multiple"
+  },
+  "MegaMenuBasic": {
+    "scope": "html",
+    "prefix": "p-megaMenu-basic",
+    "body": [
+      "<p-megaMenu [model]=\"${1:items}\"></p-megaMenu>"
+    ],
+    "description": "Basic p-megaMenu"
+  },
+  "MegaMenuVerical": {
+    "scope": "html",
+    "prefix": "p-megaMenu-verical",
+    "body": [
+      "<p-megaMenu [model]=\"${1:items}\" orientation=\"${2:vertical}\"></p-megaMenu>"
+    ],
+    "description": "p-megaMenu with vertical orientation"
+  },
+  "MenuBarBasic": {
+    "scope": "html",
+    "prefix": "p-menuBar-basic",
+    "body": [
+      "<p-menubar [model]=\"${1:items}\"></p-menubar>"
+    ],
+    "description": "Basic p-menubar"
+  },
+  "MenuBasic": {
+    "scope": "html",
+    "prefix": "p-menu-basic",
+    "body": [
+      "<p-menu [model]=\"${1:items}\"></p-menu>"
+    ],
+    "description": "Basic p-menu"
+  },
+  "MenuPopup": {
+    "scope": "html",
+    "prefix": "p-menu-popup",
+    "body": [
+      "<button type=\"button\" pButton label=\"${1:Show}\" (click)=\"toggle($event)\"></button>",
+      "<p-menu [model]=\"${2:items}\" [popup]=\"true\" [appendTo]=\"${3:body}\"></p-menu>"
+    ],
+    "description": "p-menu with popup"
+  },
+  "MenuGroup": {
+    "scope": "html",
+    "prefix": "p-menu-group",
+    "body": [
+      "<p-toast></p-toast>",
+      "<p-menu [model]=\"${1:items}\"></p-menu>"
+    ],
+    "description": "p-menu with group"
+  },
+  "DockBasic": {
+    "scope": "html",
+    "prefix": "p-dock-basic",
+    "body": [
+      "<p-dock [model]=\"${1:items}\" [position]=\"${2:position}\"></p-dock>",
+      "    <ng-template pTemplate=\"${2:item}\" let-item>",
+      "        <img [src]=\"item.icon\" [alt]=\"item.label\" width=\"100%\" />",
+      "    </ng-template>",
+      "</p-dock>"
+    ],
+    "description": "Basic p-dock"
+  },
+  "ContextMenu": {
+    "scope": "html",
+    "prefix": "p-contextMenu",
+    "body": [
+      "<img #img src=\"https://primefaces.org/cdn/primeng/images/demo/nature/nature3.jpg\" alt=\"Logo\" aria-haspopup=\"true\" class=\"max-w-full\">",
+      "<p-contextMenu [target]=\"img\" [model]=\"items\"></p-contextMenu>",
+    ],
+    "description": "p-contextMenu"
+  },
+  "ContextMenuDocument": {
+    "scope": "html",
+    "prefix": "p-contextMenuDocument",
+    "body": [
+      "<p-contextMenu [model]=\"items\" [global]=\"true\"></p-contextMenu>"
+    ],
+    "description": "p-contextMenuDocument"
+  },
+  "BreadcrumbBasic": {
+    "scope": "html",
+    "prefix": "p-breadcrumb-basic",
+    "body": [
+      "<p-breadcrumb [model]=\"${1:items}\" [home]=\"${2:home}\"></p-breadcrumb>"
+    ],
+    "description": "Basic p-breadcrumb"
+  },
+  "FileUploadBasic": {
+    "scope": "html",
+    "prefix": "p-fileUpload-basic",
+    "body": [
+      "<p-fileUpload mode=\"basic\" chooseLabel=\"Choose\" name=\"demo[]\" url=\"https://www.primefaces.org/cdn/api/upload.php\" accept=\"image/*\" maxFileSize=\"1000000\" (onUpload)=\"onUpload($event)\"></p-fileUpload>"
+    ],
+    "description": "Basic p-fileUpload"
+  },
+  "TooltipBasic": {
+    "scope": "html",
+    "prefix": "p-tooltip-basic",
+    "body": [
+      "<input type=\"text\" pInputText pTooltip=\"Enter your username\" placeholder=\"hover to display tooltip\">"
+    ],
+    "description": "Basic p-tooltip"
+  },
+  "TooltipPosition": {
+    "scope": "html",
+    "prefix": "p-tooltip-position",
+    "body": [
+      "<input type=\"text\" pInputText pTooltip=\"Enter your username\" tooltipPosition=\"${1:top}\" placeholder=\"hover to display tooltip\">"
+    ],
+    "description": "p-tooltip with position"
+  },
+  "SidebarBasic": {
+    "scope": "html",
+    "prefix": "p-sidebar-basic",
+    "body": [
+      "<p-sidebar [visible]=\"${1:visible}\" [position]=\"${2:position}\" [fullScreen]=\"${3:true}\" [blockScroll]=\"${4:true}\">",
+      "    <h1>${5:Sidebar Content}</h1>",
+      "</p-sidebar>",
+      "<button type=\"button\" pButton icon=\"pi pi-bars\" (click)=\"${6:showSidebar()}\" label=\"Show\"></button>"
+    ],
+    "description": "Basic p-sidebar"
+  },
+  "OverlayPanelBasic": {
+    "scope": "html",
+    "prefix": "p-overlayPanel-basic",
+    "body": [
+      "<button type=\"button\" pButton label=\"${1:Show}\" (click)=\"op.toggle($event)\"></button>",
+      "<p-overlayPanel #op [showCloseIcon]=\"${2:true}\">",
+      "    <h1>${3:OverlayPanel Content}</h1>",
+      "</p-overlayPanel>"
+    ],
+    "description": "Basic p-overlayPanel"
+  },
+  "DialogBasic": {
+    "scope": "html",
+    "prefix": "p-dialog-basic",
+    "body": [
+      "<button type=\"button\" pButton label=\"${1:Show}\" (click)=\"displayDialog = true\"></button>",
+      "<p-dialog header=\"${2:Header}\" [(visible)]=\"displayDialog\" [style]=\"${6:{'width': '50vw'}}\" [baseZIndex]=\"${7:1000}\">",
+      "    <h1>${8:Dialog Content}</h1>",
+      "</p-dialog>"
+    ],
+    "description": "Basic p-dialog"
+  },
+  "DialogModal": {
+    "scope": "html",
+    "prefix": "p-dialog-modal",
+    "body": [
+      "<button type=\"button\" pButton label=\"${1:Show}\" (click)=\"displayModal = true\"></button>",
+      "<p-dialog header=\"${2:Header}\" [(visible)]=\"displayModal\" [modal]=\"${3:true}\" [style]=\"${6:{'width': '50vw'}}\" [baseZIndex]=\"${7:1000}\">",
+      "    <h1>${8:Dialog Content}</h1>",
+      "</p-dialog>"
+    ],
+    "description": "p-dialog with modal"
+  },
+  "ConfimPopupBasic": {
+    "scope": "html",
+    "prefix": "p-confimPopup-basic",
+    "body": [
+      "<p-toast></p-toast>",
+      " <p-confirmPopup></p-confirmPopup>",
+      " <p-button (click)=\"confirm($event)\" label=\"${1:Confirm}\"></p-button>",
+      "<p-button (click)=\"delete($event)\" label=\"${2:Delete}\" severity=\"danger\"></p-button>"
+    ],
+    "description": "Basic p-confirmPopup"
+  },
+  "ConfirmDialog": {
+    "scope": "html",
+    "prefix": "p-confirmDialog",
+    "body": [
+      "<p-confirmDialog header=\"${1:Confirmation}\" icon=\"pi pi-exclamation-triangle\" [visible]=\"display\" [baseZIndex]=\"${2:1000}\" [style]=\"${3:{'width': '50vw'}}\" [acceptLabel]=\"${4:Yes}\" [rejectLabel]=\"${5:No}\" (accept)=\"accept()\" (reject)=\"reject()\">",
+      "    <p>${6:Are you sure you want to proceed?}</p>",
+      "</p-confirmDialog>"
+    ],
+    "description": "p-confirmDialog"
+  },
+  "TabViewBasic": {
+    "scope": "html",
+    "prefix": "p-tabView-basic",
+    "body": [
+      "<p-tabView [activeIndex]=\"${1:0}\" (onChange)=\"${2:onChange($event)}\">",
+      "    <p-tabPanel header=\"${3:Header}\">",
+      "        <h1>${4:Content}</h1>",
+      "    </p-tabPanel>",
+      "</p-tabView>"
+    ],
+    "description": "Basic p-tabView"
+  },
+  "ScrollPanelBasic": {
+    "scope": "html",
+    "prefix": "p-scrollPanel-basic",
+    "body": [
+      "<p-scrollPanel [style]=\"${1:{'width': '100%', 'height': '200px'}}\">",
+      "    <h1>${2:ScrollPanel Content}</h1>",
+      "</p-scrollPanel>"
+    ],
+    "description": "Basic p-scrollPanel"
+  },
+  "SplitterHorizontal": {
+    "scope": "html",
+    "prefix": "p-splitter-horizontal",
+    "body": [
+      "<p-splitter [style]=\"{ height: '300px' }\" styleClass=\"mb-5\">",
+      "    <ng-template pTemplate>",
+      "        <div class=\"col flex align-items-center justify-content-center\">Panel 1</div>",
+      "    <ng-template pTemplate>",
+      "    <ng-template pTemplate>",
+      "        <div class=\"col flex align-items-center justify-content-center\">Panel 2</div>",
+      "    <ng-template pTemplate>",
+      "</p-splitter>"
+    ],
+    "description": "p-splitter with horizontal orientation"
+  },
+  "SplitterVertical": {
+    "scope": "html",
+    "prefix": "p-splitter-vertical",
+    "body": [
+      "<p-splitter [style]=\"{ height: '300px' }\" styleClass=\"mb-5\" layout=\"vertical\">",
+      "    <ng-template pTemplate>",
+      "        <div class=\"col flex align-items-center justify-content-center\">Panel 1</div>",
+      "    <ng-template pTemplate>",
+      "    <ng-template pTemplate>",
+      "        <div class=\"col flex align-items-center justify-content-center\">Panel 2</div>",
+      "    <ng-template pTemplate>",
+      "</p-splitter>"
+    ],
+    "description": "p-splitter with vertical orientation"
+  },
+  "PanelBasic": {
+    "scope": "html",
+    "prefix": "p-panel-basic",
+    "body": [
+      "<p-panel header=\"Header\">",
+      "  <p>",
+      "    Content",
+      "  </p>",
+      "</p-panel>"
+    ],
+    "description": "Basic p-panel"
+  },
+  "PanelToggleable": {
+    "scope": "html",
+    "prefix": "p-panel-toggleable",
+    "body": [
+      "<p-panel header=\"Header\" [toggleable]=\"${1:true}\">",
+      "  <p>",
+      "    Content",
+      "  </p>",
+      "</p-panel>"
+    ],
+    "description": "p-panel with toggleable"
+  },
+  "FieldsetBasic": {
+    "scope": "html",
+    "prefix": "p-fieldset-basic",
+    "body": [
+      "<p-fieldset legend=\"${1:Legend}\">",
+      "  <p>",
+      "    Content",
+      "  </p>",
+      "</p-fieldset>"
+    ],
+    "description": "Basic p-fieldset"
+  },
+  "FieldsetToggleable": {
+    "scope": "html",
+    "prefix": "p-fieldset-toggleable",
+    "body": [
+      "<p-fieldset legend=\"${1:Legend}\" [toggleable]=\"${2:true}\">",
+      "  <p>",
+      "    Content",
+      "  </p>",
+      "</p-fieldset>"
+    ],
+    "description": "p-fieldset with toggleable"
+  },
+  "DividerBasic": {
+    "scope": "html",
+    "prefix": "p-divider-basic",
+    "body": [
+      "<p>",
+      "  Content",
+      "</p>",
+      "<p-divider></p-divider>",
+      "<p>",
+      "  Content",
+      "</p>"
+    ],
+    "description": "Basic p-divider"
+  },
+  "DividerVertical": {
+    "scope": "html",
+    "prefix": "p-divider-vertical",
+    "body": [
+      "<p>",
+      "  Content",
+      "</p>",
+      "<p-divider layout=\"vertical\"></p-divider>",
+      "<p>",
+      "  Content",
+      "</p>"
+    ],
+    "description": "p-divider with vertical orientation"
+  },
+  "CardBasic": {
+    "scope": "html",
+    "prefix": "p-card-basic",
+    "body": [
+      "<p-card title=\"${1:Title}\">",
+      "  <p>",
+      "    Content",
+      "  </p>",
+      "</p-card>"
+    ],
+    "description": "Basic p-card"
+  },
+  "AccordionBasic": {
+    "scope": "html",
+    "prefix": "p-accordion-basic",
+    "body": [
+      "<p-accordion [multiple]=\"${1:true}\">",
+      "    <p-accordionTab header=\"${2:Header}\">",
+      "        <h1>${3:Content}</h1>",
+      "    </p-accordionTab>",
+      "</p-accordion>"
+    ],
+    "description": "Basic p-accordion"
+  },
+  "AccordionMultiple": {
+    "scope": "html",
+    "prefix": "p-accordion-multiple",
+    "body": [
+      "<p-accordion [multiple]=\"${1:true}\">",
+      "    <p-accordionTab header=\"${2:Header}\">",
+      "        <h1>${3:Content}</h1>",
+      "    </p-accordionTab>",
+      "    <p-accordionTab header=\"${4:Header}\">",
+      "        <h1>${5:Content}</h1>",
+      "    </p-accordionTab>",
+      "</p-accordion>"
+    ],
+    "description": "p-accordion with multiple"
+  },
 }
